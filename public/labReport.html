@@ -177,137 +177,183 @@
         <div>
 
             <section>
-                <!-- notes cards  -->
-                <div class="max-md:pt-4 md:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
-                    <!-- card 1 -->
-                    <div class="group md:hover:shadow-md">
-                        <a href="#">
-                            <!-- image -->
-                            <div class="aspect-video overflow-hidden">
-                                <!-- thumbnail -->
-                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj01gcnairDuZvq4QAcsfR8sKwXFcq-guWgofmII-m0X3iC_sQAWpb59-tim1i1hTfRRVN6HW-6Wib-iXusCRqJMYyknlX31yvhqr92u8aDVLEN6jqSOgw4h0qwI590B1kdBbQLf3zh_Ati1GlFL7lRqZOnHxJyTnXIvn4wNkDmW9IXuffZJ-q5u3oI_90/s800/bca-first-semester-computer-fundamental-lab-report.webp" alt="" class="object-cover w-full h-full">
-                            </div>
-                            <div class="p-2 space-y-1">
-                                <!-- title -->
-                                <h2 class="font-medium line-clamp-2 leading-tight">
-                                    Manaslu Trekking a beautiful place to visit.
-                                </h2>
-                                <!-- username , time , views -->
-                                <div class="text-xs leading-tight">
-                                    <!-- username -->
-                                    <div class="whitespace-nowrap text-gray-700 dark:text-gray-400 flex items-center gap-1">
-                                        <div class="truncate">@abcdefghijklmnopqrstuvwxyz12345</div> <!--username-->
-                                        <i class="fa-duotone fa-badge-check"></i> <!--Verified icon-->
-                                    </div>
-                                    <!-- time -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        1 hour ago -
-                                    </span>
-                                    <!-- views -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        <i class="fa-duotone fa-eye"></i> 100K
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
+                <!-- labreport cards  -->
+                <div
+                class="max-md:pt-4 md:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+                <!-- card 1 -->
+
+                <div
+                    class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
+
+                    <!-- User Info with time posted ago -->
+                    <div class="relative flex items-center justify-between gap-2">
+
+                        <!-- User Info -->
+                        <div>
+                            <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
+                            <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
+                        </div>
+
+                        <!-- three-dot menu icon -->
+                        <div id="threeDotIcon" onclick=""
+                            class="cursor-pointer text-lg text-center">
+                            <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
+                        </div>
+
                     </div>
-                    <!--Card 2-->
-                    <div class="group md:hover:shadow-md">
-                        <a href="#">
-                            <!-- image -->
-                            <div class="aspect-video overflow-hidden">
-                                <!-- thumbnail -->
-                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj01gcnairDuZvq4QAcsfR8sKwXFcq-guWgofmII-m0X3iC_sQAWpb59-tim1i1hTfRRVN6HW-6Wib-iXusCRqJMYyknlX31yvhqr92u8aDVLEN6jqSOgw4h0qwI590B1kdBbQLf3zh_Ati1GlFL7lRqZOnHxJyTnXIvn4wNkDmW9IXuffZJ-q5u3oI_90/s800/bca-first-semester-computer-fundamental-lab-report.webp" alt="" class="object-cover w-full h-full">
-                            </div>
-                            <div class="p-2 space-y-1">
-                                <!-- title -->
-                                <h2 class="font-medium line-clamp-2 leading-tight">
-                                    Manaslu Trekking a beautiful place to visit.
-                                </h2>
-                                <!-- username , time , views -->
-                                <div class="text-xs leading-tight">
-                                    <!-- username -->
-                                    <div class="whitespace-nowrap text-gray-700 dark:text-gray-400 flex items-center gap-1">
-                                        <div class="truncate">@abcdefghijklmnopqrstuvwxyz12345</div> <!--username-->
-                                        <i class="fa-duotone fa-badge-check"></i> <!--Verified icon-->
-                                    </div>
-                                    <!-- time -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        1 hour ago -
-                                    </span>
-                                    <!-- views -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        <i class="fa-duotone fa-eye"></i> 100K
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
+
+                    <!-- image -->
+                    <div class="aspect-video overflow-hidden rounded-lg">
+                        <!-- thumbnail -->
+                        <img src="thumbnail.png" alt="" class="object-cover w-full h-full">
                     </div>
-                    <!--Card 3-->
-                    <div class="group md:hover:shadow-md">
-                        <a href="#">
-                            <!-- image -->
-                            <div class="aspect-video overflow-hidden">
-                                <!-- thumbnail -->
-                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj01gcnairDuZvq4QAcsfR8sKwXFcq-guWgofmII-m0X3iC_sQAWpb59-tim1i1hTfRRVN6HW-6Wib-iXusCRqJMYyknlX31yvhqr92u8aDVLEN6jqSOgw4h0qwI590B1kdBbQLf3zh_Ati1GlFL7lRqZOnHxJyTnXIvn4wNkDmW9IXuffZJ-q5u3oI_90/s800/bca-first-semester-computer-fundamental-lab-report.webp" alt="" class="object-cover w-full h-full">
-                            </div>
-                            <div class="p-2 space-y-1">
-                                <!-- title -->
-                                <h2 class="font-medium line-clamp-2 leading-tight">
-                                    Manaslu Trekking a beautiful place to visit.
-                                </h2>
-                                <!-- username , time , views -->
-                                <div class="text-xs leading-tight">
-                                    <!-- username -->
-                                    <div class="whitespace-nowrap text-gray-700 dark:text-gray-400 flex items-center gap-1">
-                                        <div class="truncate">@abcdefghijklmnopqrstuvwxyz12345</div> <!--username-->
-                                        <i class="fa-duotone fa-badge-check"></i> <!--Verified icon-->
-                                    </div>
-                                    <!-- time -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        1 hour ago -
-                                    </span>
-                                    <!-- views -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        <i class="fa-duotone fa-eye"></i> 100K
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
+
+                    <!-- Title -->
+                    <p class="font-semibold line-clamp-2 md:line-clamp-3">
+                        Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF | Download |
+                        BCA | BCA
+                    </p>
+
+                    <!-- Like and Comment Section -->
+                    <div class="pt-2 flex items-center justify-between text-sm border-t border-gray-300">
+                        <div class="whitespace-nowrap">
+                            <i class="fa-duotone fa-eye mr-2"></i>42 views
+                        </div>
+                        
                     </div>
-                    <!--Card 4-->
-                    <div class="group md:hover:shadow-md">
-                        <a href="#">
-                            <!-- image -->
-                            <div class="aspect-video overflow-hidden">
-                                <!-- thumbnail -->
-                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj01gcnairDuZvq4QAcsfR8sKwXFcq-guWgofmII-m0X3iC_sQAWpb59-tim1i1hTfRRVN6HW-6Wib-iXusCRqJMYyknlX31yvhqr92u8aDVLEN6jqSOgw4h0qwI590B1kdBbQLf3zh_Ati1GlFL7lRqZOnHxJyTnXIvn4wNkDmW9IXuffZJ-q5u3oI_90/s800/bca-first-semester-computer-fundamental-lab-report.webp" alt="" class="object-cover w-full h-full">
-                            </div>
-                            <div class="p-2 space-y-1">
-                                <!-- title -->
-                                <h2 class="font-medium line-clamp-2 leading-tight">
-                                    Manaslu Trekking a beautiful place to visit.
-                                </h2>
-                                <!-- username , time , views -->
-                                <div class="text-xs leading-tight">
-                                    <!-- username -->
-                                    <div class="whitespace-nowrap text-gray-700 dark:text-gray-400 flex items-center gap-1">
-                                        <div class="truncate">@abcdefghijklmnopqrstuvwxyz12345</div> <!--username-->
-                                        <i class="fa-duotone fa-badge-check"></i> <!--Verified icon-->
-                                    </div>
-                                    <!-- time -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        1 hour ago -
-                                    </span>
-                                    <!-- views -->
-                                    <span class="whitespace-nowrap text-gray-700 dark:text-gray-400">
-                                        <i class="fa-duotone fa-eye"></i> 100K
-                                    </span>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+
+
                 </div>
+                <!--Card 2-->
+                <div
+                    class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
+
+                    <!-- User Info with time posted ago -->
+                    <div class="relative flex items-center justify-between gap-2">
+
+                        <!-- User Info -->
+                        <div>
+                            <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
+                            <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
+                        </div>
+
+                        <!-- three-dot menu icon -->
+                        <div id="threeDotIcon" onclick=""
+                            class="cursor-pointer text-lg text-center">
+                            <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- image -->
+                    <div class="aspect-video overflow-hidden rounded-lg">
+                        <!-- thumbnail -->
+                        <img src="thumbnail.png" alt="" class="object-cover w-full h-full">
+                    </div>
+
+                    <!-- Title -->
+                    <p class="font-semibold line-clamp-2 md:line-clamp-3">
+                        Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF | Download |
+                        BCA | BCA
+                    </p>
+
+                    <!-- Like and Comment Section -->
+                    <div class="pt-2 flex items-center justify-between text-sm border-t border-gray-300">
+                        <div class="whitespace-nowrap">
+                            <i class="fa-duotone fa-eye mr-2"></i>42 views
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                <!--Card 3-->
+                <div
+                    class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
+
+                    <!-- User Info with time posted ago -->
+                    <div class="relative flex items-center justify-between gap-2">
+
+                        <!-- User Info -->
+                        <div>
+                            <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
+                            <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
+                        </div>
+
+                        <!-- three-dot menu icon -->
+                        <div id="threeDotIcon" onclick=""
+                            class="cursor-pointer text-lg text-center">
+                            <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- image -->
+                    <div class="aspect-video overflow-hidden rounded-lg">
+                        <!-- thumbnail -->
+                        <img src="thumbnail.png" alt="" class="object-cover w-full h-full">
+                    </div>
+
+                    <!-- Title -->
+                    <p class="font-semibold line-clamp-2 md:line-clamp-3">
+                        Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF | Download |
+                        BCA | BCA
+                    </p>
+
+                    <!-- Like and Comment Section -->
+                    <div class="pt-2 flex items-center justify-between text-sm border-t border-gray-300">
+                        <div class="whitespace-nowrap">
+                            <i class="fa-duotone fa-eye mr-2"></i>42 views
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+                <!--Card 4-->
+                <div
+                    class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
+
+                    <!-- User Info with time posted ago -->
+                    <div class="relative flex items-center justify-between gap-2">
+
+                        <!-- User Info -->
+                        <div>
+                            <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
+                            <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
+                        </div>
+
+                        <!-- three-dot menu icon -->
+                        <div id="threeDotIcon" onclick=""
+                            class="cursor-pointer text-lg text-center">
+                            <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
+                        </div>
+
+                    </div>
+
+                    <!-- image -->
+                    <div class="aspect-video overflow-hidden rounded-lg">
+                        <!-- thumbnail -->
+                        <img src="thumbnail.png" alt="" class="object-cover w-full h-full">
+                    </div>
+
+                    <!-- Title -->
+                    <p class="font-semibold line-clamp-2 md:line-clamp-3">
+                        Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF | Download |
+                        BCA | BCA
+                    </p>
+
+                    <!-- Like and Comment Section -->
+                    <div class="pt-2 flex items-center justify-between text-sm border-t border-gray-300">
+                        <div class="whitespace-nowrap">
+                            <i class="fa-duotone fa-eye mr-2"></i>42 views
+                        </div>
+                        
+                    </div>
+
+
+                </div>
+            </div>
 
 
                 <footer class="p-4 text-sm leading-6 mt-12">

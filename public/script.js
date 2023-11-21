@@ -14,11 +14,17 @@ function toggleSideNav() {
   }
 
   function toggleSettingsDropdown() {
-    const dropdown = document.getElementById('settingsDropdown');
+    const settingsDropdown = document.getElementById('settingsDropdown');
     const settingsIcon = document.getElementById('settingsIcon');
     const moreIcon = document.getElementById('moreIcon');
-    dropdown.classList.toggle('hidden');
+    settingsDropdown.classList.toggle('hidden');
     settingsIcon.classList.toggle('rotate-90');
     moreIcon.classList.toggle('rotate-180');
   }
-  
+
+  function toggleSlidingMenu() {
+    const slidingMenu = document.getElementById('slidingMenu');
+    slidingMenu.classList.toggle('translate-y-full');
+
+}
+ 
