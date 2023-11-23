@@ -143,33 +143,20 @@
 
 
     <main class="lg:pl-[16rem]">
-        <header class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
+        <header
+            class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
             <h1 class="lg:hidden text-3xl font-semibold">StudiNotes</h1>
 
-            <!-- search button , upgrade button, profile button  -->
-            <div class="flex gap-4 ml-auto items-center justify-end">
+            <!-- search button , hamburger button  -->
+            <div class="flex items-center ml-auto gap-4">
+                
                 <!-- search button -->
-                <form class="hidden lg:flex items-center">
-                    <input type="text"
-                        class="p-2.5 w-[20rem] bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg"
-                        placeholder="Search ..." required>
-
-                    <button type="submit"
-                        class="p-2.5 ml-2 text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">
-                        <i class="fa-duotone fa-magnifying-glass text-xl"></i>
-                    </button>
-                </form>
-
-                <!-- upgrade button/link -->
-                <a href="priceTable.html"
-                    class="px-4 py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">Upgrade</a>
-
-                <!-- profile button/link -->
-                <a href="profile.html"
-                class="w-10 py-2.5 flex items-center justify-center text-sm font-medium rounded-full bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">RB</a>
+                <div id="hamburger" onclick="" class="cursor-pointer duration-100">
+                    <i class="fa-duotone fa-search text-2xl"></i>
+                </div>
 
                 <!-- hamburger button for mobile -->
-                <div id="hamburger" onclick="toggleSideNav()"  class="lg:hidden cursor-pointer">
+                <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
                     <i class="fa-duotone fa-bars text-2xl"></i>
                 </div>
             </div>

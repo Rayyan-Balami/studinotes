@@ -14,17 +14,26 @@ function toggleSideNav() {
   }
 
   function toggleSettingsDropdown() {
-    const settingsDropdown = document.getElementById('settingsDropdown');
-    const settingsIcon = document.getElementById('settingsIcon');
-    const moreIcon = document.getElementById('moreIcon');
+    const settingsDropdown = document.querySelector("#settingsDropdown");
+    const settingsIcon = document.querySelector("#settingsIcon");
+    const moreIcon = document.querySelector("#moreIcon");
     settingsDropdown.classList.toggle('hidden');
     settingsIcon.classList.toggle('rotate-90');
     moreIcon.classList.toggle('rotate-180');
   }
 
   function toggleSlidingMenu() {
-    const slidingMenu = document.getElementById('slidingMenu');
+    const slidingMenu = document.querySelector("#slidingMenu");
     slidingMenu.classList.toggle('translate-y-full');
+
+}
+
+function toggleRequestDropdown() {
+  const requestDropdown = document.querySelector("#requestDropdown");
+  const requestIcon = document.querySelector("#requestIcon i");
+  requestDropdown.classList.toggle('hidden');
+  requestIcon.classList.toggle('rotate-90');
+
 
 }
  

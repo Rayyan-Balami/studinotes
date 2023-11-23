@@ -142,33 +142,26 @@
     </div>
 
     <main class="lg:pl-[16rem]">
-        <header class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
+        <header
+            class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
             <h1 class="lg:hidden text-3xl font-semibold">StudiNotes</h1>
 
-            <!-- search button , upgrade button, profile button  -->
-            <div class="flex gap-4 ml-auto items-center justify-end">
-                <!-- search button -->
-                <form class="hidden lg:flex items-center">
-                    <input type="text"
-                        class="p-2.5 w-[20rem] bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg"
-                        placeholder="Search ..." required>
+            <!-- search button , hamburger button  -->
+            <div class="flex items-center ml-auto gap-4">
 
-                    <button type="submit"
-                        class="p-2.5 ml-2 text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">
-                        <i class="fa-duotone fa-magnifying-glass text-xl"></i>
-                    </button>
-                </form>
-
-                <!-- upgrade button/link -->
+                <!-- uplaod button -->
                 <a href="priceTable.html"
-                    class="px-4 py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">Upgrade</a>
+                    class="px-2.5 py-2 md:px-4 md:py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-300 active:bg-gray-300 duration-200 uppercase">
+                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload</a>
 
-                <!-- profile button/link -->
-                <a href="profile.html"
-                class="w-10 py-2.5 flex items-center justify-center text-sm font-medium rounded-full bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">RB</a>
+                
+                <!-- search button -->
+                <div id="hamburger" onclick="" class="cursor-pointer duration-100">
+                    <i class="fa-duotone fa-search text-2xl"></i>
+                </div>
 
                 <!-- hamburger button for mobile -->
-                <div id="hamburger" onclick="toggleSideNav()"  class="lg:hidden cursor-pointer">
+                <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
                     <i class="fa-duotone fa-bars text-2xl"></i>
                 </div>
             </div>
@@ -177,8 +170,8 @@
 
             <section>
                 <!-- mynotes, likes, bookmarks,  -->
-                <div class="py-2 md:p-4 sticky top-16 xl:top-20 z-10 bg-white ">
-                    <div class="py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border border-gray-200">
+                <div class="py-2 sm:p-4 sticky top-16 xl:top-20 z-10 bg-white ">
+                    <div class="py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border border-gray-200 sm:rounded-lg">
                         <!-- my notes -->
                         <a href="#" class="flex-grow text-center">
                             <i class="fa-duotone fa-memo-pad mr-2"></i>Notes
@@ -199,7 +192,7 @@
                 </div>
                 <!-- notes cards  -->
                 <div
-                    class="max-md:pt-4 md:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+                    class="max-md:pt-4 sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-5 gap-4">
                     <!-- card 1 -->
 
                     <div
@@ -214,20 +207,15 @@
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
 
-                            <!-- treeDot menu -->
-                            <div id="threeDotIcon" class="cursor-pointer text-lg text-center" onclick="toggleSlidingMenu()">
-                                <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
-                            </div>
-                        
-                            <!-- Sliding Menu -->
-                            <div id="slidingMenu" class="sliding-menu fixed bottom-0 left-0 z-10 w-full bg-white translate-y-full transition-all duration-500">
-                                <ul class="list-none p-0">
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Delete</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Edit</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Report</li>
-                                    <li class="py-3 cursor-pointer">Share Links</li>
-                                </ul>
-                            </div>
+                             <div class="flex items-center space-x-2">
+                            
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-pen-to-square mr-1"></i>Edit</a>
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-trash-can mr-1"></i>Delete</a>
+                                    
+                    
+                            
+                            <span><i class="fa-duotone fa-circle-location-arrow text-lg"></i></span>
+                        </div>
 
                         </div>
 
@@ -247,12 +235,25 @@
                             </div>
                         </div>
 
-                        <!-- Like and Comment Section -->
-                        <div class="max-sm:pt-2 flex items-center justify-between text-sm max-sm:border-t border-gray-300">
+                        <!--views ,Like and paages -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
                             </div>
-                            
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
+                            </div>
+
+                            <!-- pages  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                            </div>
+
                         </div>
 
 
@@ -270,20 +271,15 @@
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
 
-                            <!-- treeDot menu -->
-                            <div id="threeDotIcon" class="cursor-pointer text-lg text-center" onclick="toggleSlidingMenu()">
-                                <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
-                            </div>
-                        
-                            <!-- Sliding Menu -->
-                            <div id="slidingMenu" class="sliding-menu fixed bottom-0 left-0 z-10 w-full bg-white translate-y-full transition-all duration-500">
-                                <ul class="list-none p-0">
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Delete</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Edit</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Report</li>
-                                    <li class="py-3 cursor-pointer">Share Links</li>
-                                </ul>
-                            </div>
+                             <div class="flex items-center space-x-2">
+                            
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-pen-to-square mr-1"></i>Edit</a>
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-trash-can mr-1"></i>Delete</a>
+                                    
+                    
+                            
+                            <span><i class="fa-duotone fa-circle-location-arrow text-lg"></i></span>
+                        </div>
 
                         </div>
 
@@ -303,12 +299,25 @@
                             </div>
                         </div>
 
-                        <!-- Like and Comment Section -->
-                        <div class="max-sm:pt-2 flex items-center justify-between text-sm max-sm:border-t border-gray-300">
+                        <!--views ,Like and paages -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
                             </div>
-                            
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
+                            </div>
+
+                            <!-- pages  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                            </div>
+
                         </div>
 
 
@@ -326,20 +335,15 @@
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
 
-                            <!-- treeDot menu -->
-                            <div id="threeDotIcon" class="cursor-pointer text-lg text-center" onclick="toggleSlidingMenu()">
-                                <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
-                            </div>
-                        
-                            <!-- Sliding Menu -->
-                            <div id="slidingMenu" class="sliding-menu fixed bottom-0 left-0 z-10 w-full bg-white translate-y-full transition-all duration-500">
-                                <ul class="list-none p-0">
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Delete</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Edit</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Report</li>
-                                    <li class="py-3 cursor-pointer">Share Links</li>
-                                </ul>
-                            </div>
+                             <div class="flex items-center space-x-2">
+                            
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-pen-to-square mr-1"></i>Edit</a>
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-trash-can mr-1"></i>Delete</a>
+                                    
+                    
+                            
+                            <span><i class="fa-duotone fa-circle-location-arrow text-lg"></i></span>
+                        </div>
 
                         </div>
 
@@ -359,12 +363,25 @@
                             </div>
                         </div>
 
-                        <!-- Like and Comment Section -->
-                        <div class="max-sm:pt-2 flex items-center justify-between text-sm max-sm:border-t border-gray-300">
+                        <!--views ,Like and paages -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
                             </div>
-                            
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
+                            </div>
+
+                            <!-- pages  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                            </div>
+
                         </div>
 
 
@@ -382,20 +399,15 @@
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
 
-                            <!-- treeDot menu -->
-                            <div id="threeDotIcon" class="cursor-pointer text-lg text-center" onclick="toggleSlidingMenu()">
-                                <i class="fa-duotone fa-ellipsis-vertical w-4"></i>
-                            </div>
-                        
-                            <!-- Sliding Menu -->
-                            <div id="slidingMenu" class="sliding-menu fixed bottom-0 left-0 z-10 w-full bg-white translate-y-full transition-all duration-500">
-                                <ul class="list-none p-0">
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Delete</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Edit</li>
-                                    <li class="py-3 border-b border-gray-300 cursor-pointer">Report</li>
-                                    <li class="py-3 cursor-pointer">Share Links</li>
-                                </ul>
-                            </div>
+                             <div class="flex items-center space-x-2">
+                            
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-pen-to-square mr-1"></i>Edit</a>
+                            <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i class="fa-duotone fa-trash-can mr-1"></i>Delete</a>
+                                    
+                    
+                            
+                            <span><i class="fa-duotone fa-circle-location-arrow text-lg"></i></span>
+                        </div>
 
                         </div>
 
@@ -415,12 +427,25 @@
                             </div>
                         </div>
 
-                        <!-- Like and Comment Section -->
-                        <div class="max-sm:pt-2 flex items-center justify-between text-sm max-sm:border-t border-gray-300">
+                        <!--views ,Like and paages -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
                             </div>
-                            
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
+                            </div>
+
+                            <!-- pages  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                            </div>
+
                         </div>
 
 
@@ -468,13 +493,13 @@
 
             </section>
 
-            <aside class="order-first sm:max-xl:grid grid-cols-2 gap-4 pt-4 sm:max-xl:space-y-0 xl:fixed xl:z-20 xl:top-20 xl:right-0 xl:w-[20rem] xl:h-full md:px-4 md:pt-4 xl:pb-32 xl:overflow-y-auto xl:border-l border-gray-200 space-y-2 xl:space-y-4 transition-all duration-500">
+            <aside class="order-first sm:max-xl:grid grid-cols-2 gap-4 pt-4 sm:max-xl:space-y-0 xl:fixed xl:z-20 xl:top-20 xl:right-0 xl:w-[20rem] xl:h-full sm:px-4 md:pt-4 xl:pb-32 xl:overflow-y-auto xl:border-l border-gray-200 space-y-2 xl:space-y-4 transition-all duration-500">
 
                 <!-- Profile Card -->
-                <div class="p-4 flex flex-col bg-gray-50 xl:rounded-lg space-y-4 border border-gray-200 ">
+                <div class="p-4 flex flex-col bg-gray-50 sm:rounded-lg space-y-4 border border-gray-200 ">
                     <div class="flex items-center justify-between">
                         <h2 class="font-semibold">Profile Card</h2>
-                        <div class="flex items-center space-x-1">
+                        <div class="flex items-center space-x-2">
                             
                             <a href="#" class="text-xs px-1.5 py-1 rounded-lg bg-white border border-gray-300"><i
                                     class="fa-duotone fa-user-pen mr-1"></i>Edit</a>
@@ -518,7 +543,7 @@
                 <!-- wrapper for uploads, followers, following, brief self description, email , website -->
                 <div class="md:max-xl:space-y-4 space-y-2 xl:space-y-4">
                     <!--uploads, followers, following -->
-                    <div class="py-4 bg-gray-50 text-base xl:rounded-lg space-y-4 border border-gray-200 ">
+                    <div class="py-4 bg-gray-50 text-base sm:rounded-lg space-y-4 border border-gray-200 ">
                         <div class="grid grid-cols-3 place-content-center font-light divide-x divide-gray-300">
                             <!-- notes -->
                             <div>
@@ -542,14 +567,14 @@
                                 <i class="fa-duotone fa-user-plus mr-2"></i>Suscribe
                             </a>
                             <a href="#" class="block whitespace-nowrap px-2 py-1 w-full text-base text-center rounded-lg bg-white border border-gray-300">
-                                <i class="fa-duotone fa-share mr-2"></i>Requests
+                                <i class="fa-duotone fa-grid-round-2-plus mr-2"></i>My Requests
                             </a>
                         </div>
                         
                     </div>
 
                     <!-- brief self description, email , website -->
-                    <div class="px-4 py-2 bg-gray-50 text-base xl:rounded-lg space-y-4 border border-gray-200 ">
+                    <div class="px-4 py-2 bg-gray-50 text-base sm:rounded-lg space-y-4 border border-gray-200 ">
                         <p class="text-center leading-tight line-clamp-4">hello world , Nice to meet you 
                             follow me on insta 
                         </p>

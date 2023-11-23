@@ -150,28 +150,18 @@
             class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
             <h1 class="lg:hidden text-3xl font-semibold">StudiNotes</h1>
 
-            <!-- search button , upgrade button, profile button  -->
-            <div class="flex gap-4 ml-auto items-center justify-end">
-                <!-- search button -->
-                <form class="hidden lg:flex items-center">
-                    <input type="text"
-                        class="p-2.5 w-[20rem] bg-gray-50 border border-gray-200 text-gray-900 text-sm rounded-lg"
-                        placeholder="Search ..." required>
+            <!-- search button , hamburger button  -->
+            <div class="flex items-center ml-auto gap-4">
 
-                    <button type="submit"
-                        class="p-2.5 ml-2 text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">
-                        <i class="fa-duotone fa-magnifying-glass text-xl"></i>
-                    </button>
-                </form>
-
-                <!-- upgrade button/link -->
+                <!-- new request button -->
                 <a href="priceTable.html"
-                    class="px-4 py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-200 active:bg-gray-300 duration-200">Upgrade</a>
+                    class="px-2.5 py-2 md:px-4 md:py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-300 active:bg-gray-300 duration-200 uppercase">
+                    <i class="fa-duotone fa-pen-field text-base mr-2 md:mr-4"></i>New</a>
 
-                <!-- profile button/link -->
-                <a href="profile.html"
-                    class="w-10 py-2.5 flex items-center justify-center text-sm font-medium rounded-full bg-gray-50 border border-gray-200 active:bg-gray-300 focus:outline-none duration-200">RB</a>
-
+                <!-- search button -->
+                <div class="cursor-pointer duration-100">
+                    <i class="fa-duotone fa-search text-2xl"></i>
+                </div>
 
                 <!-- hamburger button for mobile -->
                 <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
@@ -183,18 +173,8 @@
 
             <section>
                 <!-- mynotes, likes, bookmarks,  -->
-                <div class="py-2 md:p-4 sticky top-16 xl:top-20 z-10 bg-white ">
-                    <div class="ml-auto mb-2 py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border border-gray-200">
-                        <!-- make requests -->
-                        <a href="#" class="flex-grow text-center">
-                            <i class="fa-duotone fa-pen-field mr-2"></i>Make Request
-                        </a>
-                        <!-- my requests -->
-                        <a href="#" class="flex-grow text-center">
-                            <i class="fa-duotone fa-cards-blank mr-2"></i>My Requests
-                        </a>
-                    </div>
-                    <div class="py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border border-gray-200">
+                <div class="py-2 sm:p-4 sticky top-16 xl:top-20 z-10 bg-white ">
+                    <div class="py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border border-gray-200 sm:rounded-lg">
                         <!-- my notes -->
                         <a href="#" class="flex-grow text-center">
                             <i class="fa-duotone fa-memo-pad mr-2"></i>Notes
@@ -218,11 +198,21 @@
                     class="pt-2 md:px-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
                     <!-- card 1 -->
                     <div class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
-                        <!-- User Info -->
+                            <!-- User Info with time posted ago -->
+                        <div class="relative flex items-center justify-between gap-2">
+
+                            <!-- User Info -->
                             <div>
                                 <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
+
+                             <!-- share icon -->
+                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
+                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
+                            </div>
+
+                        </div>
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold leading-tight line-clamp-2 md:line-clamp-3">
                                 Need DSA notes for 3rd sem
@@ -233,23 +223,52 @@
                             </p>
                             
                         </div>
-                        <div class="max-sm:pt-2 flex items-center justify-between max-sm:border-t border-gray-300">
-                            <button type="button" class="inline-block bg-gray-800 rounded-full px-2.5 py-2 text-xs font-medium uppercase text-white">
+                        <div class="flex items-center justify-between">
+                            <button type="button" class="inline-block bg-gray-800 rounded-lg px-2.5 py-2 text-xs font-medium uppercase text-white">
                                 Attempt
                             </button>
                             
-                            <button type="button" class="inline-block text-xs font-medium uppercase underline">
-                                See Details
+                            <button type="button" class="inline-block text-xs font-medium uppercase">
+                               • <span class="underline">See Details</span>
                               </button>
+                        </div>
+                        <!-- views, responses, upvotes -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                            </div>
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-comment-dots fa-flip-horizontal mr-2"></i>12 Responses
+                            </div>
+
+                            <!-- upvotes  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-duotone fa-up mr-2"></i>5 Upvotes
+                            </div>
+
                         </div>
                     </div>
                     <!--Card 2-->
                     <div class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
-                        <!-- User Info -->
+                            <!-- User Info with time posted ago -->
+                        <div class="relative flex items-center justify-between gap-2">
+
+                            <!-- User Info -->
                             <div>
                                 <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
+
+                             <!-- share icon -->
+                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
+                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
+                            </div>
+
+                        </div>
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold leading-tight line-clamp-2 md:line-clamp-3">
                                 Need DSA notes for 3rd sem
@@ -260,23 +279,52 @@
                             </p>
                             
                         </div>
-                        <div class="max-sm:pt-2 flex items-center justify-between max-sm:border-t border-gray-300">
-                            <button type="button" class="inline-block bg-gray-800 rounded-full px-2.5 py-2 text-xs font-medium uppercase text-white">
+                        <div class="flex items-center justify-between">
+                            <button type="button" class="inline-block bg-gray-800 rounded-lg px-2.5 py-2 text-xs font-medium uppercase text-white">
                                 Attempt
                             </button>
                             
-                            <button type="button" class="inline-block text-xs font-medium uppercase underline">
-                                See Details
+                            <button type="button" class="inline-block text-xs font-medium uppercase">
+                               • <span class="underline">See Details</span>
                               </button>
+                        </div>
+                        <!-- views, responses, upvotes -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                            </div>
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-comment-dots fa-flip-horizontal mr-2"></i>12 Responses
+                            </div>
+
+                            <!-- upvotes  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-duotone fa-up mr-2"></i>5 Upvotes
+                            </div>
+
                         </div>
                     </div>
                     <!--Card 3-->
                     <div class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
-                        <!-- User Info -->
+                            <!-- User Info with time posted ago -->
+                        <div class="relative flex items-center justify-between gap-2">
+
+                            <!-- User Info -->
                             <div>
                                 <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
+
+                             <!-- share icon -->
+                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
+                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
+                            </div>
+
+                        </div>
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold leading-tight line-clamp-2 md:line-clamp-3">
                                 Need DSA notes for 3rd sem
@@ -287,23 +335,52 @@
                             </p>
                             
                         </div>
-                        <div class="max-sm:pt-2 flex items-center justify-between max-sm:border-t border-gray-300">
-                            <button type="button" class="inline-block bg-gray-800 rounded-full px-2.5 py-2 text-xs font-medium uppercase text-white">
+                        <div class="flex items-center justify-between">
+                            <button type="button" class="inline-block bg-gray-800 rounded-lg px-2.5 py-2 text-xs font-medium uppercase text-white">
                                 Attempt
                             </button>
                             
-                            <button type="button" class="inline-block text-xs font-medium uppercase underline">
-                                See Details
+                            <button type="button" class="inline-block text-xs font-medium uppercase">
+                               • <span class="underline">See Details</span>
                               </button>
+                        </div>
+                        <!-- views, responses, upvotes -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                            </div>
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-comment-dots fa-flip-horizontal mr-2"></i>12 Responses
+                            </div>
+
+                            <!-- upvotes  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-duotone fa-up mr-2"></i>5 Upvotes
+                            </div>
+
                         </div>
                     </div>
                     <!--Card 4-->
                     <div class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border border-gray-200">
-                        <!-- User Info -->
+                            <!-- User Info with time posted ago -->
+                        <div class="relative flex items-center justify-between gap-2">
+
+                            <!-- User Info -->
                             <div>
                                 <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
                                 <p class="whitespace-nowrap text-xs">Posted 2 hours ago</p>
                             </div>
+
+                             <!-- share icon -->
+                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
+                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
+                            </div>
+
+                        </div>
                         <div class="space-y-2">
                             <h5 class="text-lg font-semibold leading-tight line-clamp-2 md:line-clamp-3">
                                 Need DSA notes for 3rd sem
@@ -314,14 +391,33 @@
                             </p>
                             
                         </div>
-                        <div class="max-sm:pt-2 flex items-center justify-between max-sm:border-t border-gray-300">
-                            <button type="button" class="inline-block bg-gray-800 rounded-full px-2.5 py-2 text-xs font-medium uppercase text-white">
+                        <div class="flex items-center justify-between">
+                            <button type="button" class="inline-block bg-gray-800 rounded-lg px-2.5 py-2 text-xs font-medium uppercase text-white">
                                 Attempt
                             </button>
                             
-                            <button type="button" class="inline-block text-xs font-medium uppercase underline">
-                                See Details
+                            <button type="button" class="inline-block text-xs font-medium uppercase">
+                               • <span class="underline">See Details</span>
                               </button>
+                        </div>
+                        <!-- views, responses, upvotes -->
+                        <div
+                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+                            
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                            </div>
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-comment-dots fa-flip-horizontal mr-2"></i>12 Responses
+                            </div>
+
+                            <!-- upvotes  -->
+                            <div class="whitespace-nowrap self-end">
+                                <i class="fa-duotone fa-up mr-2"></i>5 Upvotes
+                            </div>
+
                         </div>
                     </div>
                 </div>
