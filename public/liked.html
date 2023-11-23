@@ -173,21 +173,41 @@
         <div>
 
             <section>
-                <!-- notes cards  -->
+                <!-- mynotes, likes, bookmarks,  -->
+                <div class="py-2 sm:p-4 sticky top-16 xl:top-20 z-10 bg-white ">
+                    <div class="py-2 px-1 bg-gray-50 flex items-center justify-between divide-x divide-gray-300 border-y sm:border-x  border-gray-200 sm:rounded-lg">
+                        <!-- my notes -->
+                        <a href="#" class="flex-grow text-center">
+                            <i class="fa-duotone fa-memo-pad mr-2"></i>Notes
+                        </a>
+                        <!-- following -->
+                        <a href="#" class="flex-grow text-center">
+                            <i class="fa-duotone fa-file-circle-question mr-2"></i>Questions
+                        </a>
+                        <!-- notes -->
+                        <a href="#" class="flex-grow text-center">
+                            <i class="fa-duotone fa-display-code mr-2"></i>Lab Reports
+                        </a>
+                        <!-- search icon -->
+                        <span class="flex-grow  text-center">
+                            <i class="fa-duotone fa-magnifying-glass"></i> <span class="hidden md:inline ml-2">Search</span>
+                        </span>
+                    </div>
+                </div>
+                <!-- likes cards  -->
                 <div
-                class="max-md:pt-4 sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+                class="max-md:pt-2 sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
                 <!-- card 1 -->
-
                     <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
+                        class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
 
                         <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
+                        <div class="flex items-center justify-between gap-2">
 
                             <!-- User Info -->
                             <div>
                                 <p class="whitespace-nowrap text-sm font-semibold truncate">@Rayyan_balami</p>
-                                <p class="whitespace-nowrap text-xs">Posted 2 min ago</p>
+                                <p class="whitespace-nowrap text-xs">Posted 30 min ago</p>
                             </div>
 
                             <!-- share icon -->
@@ -197,27 +217,24 @@
 
                         </div>
 
-                        <!-- image -->
-                        <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://www.fotor.com/blog/wp-content/uploads/2019/10/Untitled-design-19.jpg" alt="" class="object-cover w-full h-full">
-                        </div>
-
-                        <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                        <div class="max-md:grid grid-cols-2 gap-2 md:space-y-2">
+                            <!-- image -->
+                            <div class="aspect-video overflow-hidden rounded-lg">
+                                <img src="https://i.ytimg.com/vi/rqQjkhuraws/mqdefault.jpg" alt=""
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <!-- Title -->
+                            <div class="font-semibold ">
+                                <h2 class="line-clamp-4 md:line-clamp-3 leading-tight">
                                     Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
                                 </h2>
                             </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        </div>
+
+                        <!--views ,Like and paages -->
+                        <div class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
@@ -239,15 +256,15 @@
                     </div>
                     <!--Card 2-->
                     <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
+                        class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
 
                         <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
+                        <div class="flex items-center justify-between gap-2">
 
                             <!-- User Info -->
                             <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Satish_chaudhary</p>
-                                <p class="whitespace-nowrap text-xs">Posted 12 hours ago</p>
+                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Rayyan_balami</p>
+                                <p class="whitespace-nowrap text-xs">Posted 30 min ago</p>
                             </div>
 
                             <!-- share icon -->
@@ -257,14 +274,16 @@
 
                         </div>
 
-                        <!-- image -->
-                        <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/viBz0vPPEnA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmAKweLRlVc2oJHcM7TUrJAuU-Rg" alt="" class="object-cover w-full h-full">
-                        </div>
-
-                        <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                        <div class="max-md:grid grid-cols-2 gap-2 md:space-y-2">
+                            <!-- image -->
+                            <div class="aspect-video overflow-hidden rounded-lg">
+                                <!-- thumbnail -->
+                                <img src="https://i.ytimg.com/vi/dkWR5qHeSiQ/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD1ukBDtfyCyTEalmqOldMcZN22WA"
+                                    alt="" class="object-cover w-full h-full">
+                            </div>
+                            <!-- Title -->
+                            <div class="font-semibold ">
+                                <h2 class="line-clamp-4 md:line-clamp-3 leading-tight">
                                     Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
                                     Download |
                                     BCA | BCA
@@ -273,11 +292,11 @@
                                     BCA | BCA
                                 </h2>
                             </div>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,Like and paages -->
+                        <div class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
@@ -299,15 +318,15 @@
                     </div>
                     <!--Card 3-->
                     <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
+                        class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
 
                         <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
+                        <div class="flex items-center justify-between gap-2">
 
                             <!-- User Info -->
                             <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Nishanmahat</p>
-                                <p class="whitespace-nowrap text-xs">Posted 1 day ago</p>
+                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Rayyan_balami</p>
+                                <p class="whitespace-nowrap text-xs">Posted 30 min ago</p>
                             </div>
 
                             <!-- share icon -->
@@ -317,14 +336,16 @@
 
                         </div>
 
-                        <!-- image -->
-                        <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/JU-8mtd8HjY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCtrtSpgQ2Da-qLGkCvJl7P8gS8BQ" alt="" class="object-cover w-full h-full">
-                        </div>
-
-                        <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                        <div class="max-md:grid grid-cols-2 gap-2 md:space-y-2">
+                            <!-- image -->
+                            <div class="aspect-video overflow-hidden rounded-lg">
+                                <!-- thumbnail -->
+                                <img src="https://i.ytimg.com/vi/REQyDg3pC1s/sddefault.jpg" alt=""
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <!-- Title -->
+                            <div class="font-semibold ">
+                                <h2 class="line-clamp-4 md:line-clamp-3 leading-tight">
                                     Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
                                     Download |
                                     BCA | BCA
@@ -333,11 +354,11 @@
                                     BCA | BCA
                                 </h2>
                             </div>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,Like and paages -->
+                        <div class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views
@@ -359,15 +380,15 @@
                     </div>
                     <!--Card 4-->
                     <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
+                        class="max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
 
                         <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
+                        <div class="flex items-center justify-between gap-2">
 
                             <!-- User Info -->
                             <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
-                                <p class="whitespace-nowrap text-xs">Posted 2 day ago</p>
+                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Rayyan_balami</p>
+                                <p class="whitespace-nowrap text-xs">Posted 30 min ago</p>
                             </div>
 
                             <!-- share icon -->
@@ -377,14 +398,16 @@
 
                         </div>
 
-                        <!-- image -->
-                        <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/-H8NNi-Kox0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCa4Ni42WbKdsgSsz4ZBeMgTB2WlA" alt="" class="object-cover w-full h-full">
-                        </div>
-
-                        <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                        <div class="max-md:grid grid-cols-2 gap-2 md:space-y-2">
+                            <!-- image -->
+                            <div class="aspect-video overflow-hidden rounded-lg">
+                                <!-- thumbnail -->
+                                <img src="https://i.ytimg.com/vi/iZasnmXBK8A/maxresdefault.jpg" alt=""
+                                    class="object-cover w-full h-full">
+                            </div>
+                            <!-- Title -->
+                            <div class="font-semibold ">
+                                <h2 class="line-clamp-4 md:line-clamp-3 leading-tight">
                                     Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
                                     Download |
                                     BCA | BCA
@@ -393,11 +416,11 @@
                                     BCA | BCA
                                 </h2>
                             </div>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,Like and paages -->
+                        <div class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
                                 <i class="fa-duotone fa-eye mr-2"></i>42 views

@@ -22,18 +22,4 @@ function toggleSideNav() {
     moreIcon.classList.toggle('rotate-180');
   }
 
-  function toggleSlidingMenu() {
-    const slidingMenu = document.querySelector("#slidingMenu");
-    slidingMenu.classList.toggle('translate-y-full');
-
-}
-
-function toggleRequestDropdown() {
-  const requestDropdown = document.querySelector("#requestDropdown");
-  const requestIcon = document.querySelector("#requestIcon i");
-  requestDropdown.classList.toggle('hidden');
-  requestIcon.classList.toggle('rotate-90');
-
-
-}
  
