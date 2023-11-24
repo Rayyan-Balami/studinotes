@@ -12,11 +12,10 @@
 </head>
 
 <body>
-
-    <div id="sideNav"
-        class="flex flex-col fixed z-20 inset-0 top-0 max-sm:-left-full max-sm:w-full max-lg:-left-[16rem] transition-all duration-500 w-[16rem] pb-4 px-4 overflow-y-auto border-r border-gray-200 space-y-4  bg-white ">
+    
+    <div id="sideNav" class="flex flex-col fixed z-20 inset-0 top-0 max-sm:-left-full max-sm:w-full max-lg:-left-[16rem] transition-all duration-500 w-[16rem] pb-4 px-4 overflow-y-auto border-r border-gray-200 space-y-4  bg-white ">
         <!-- website name / logo -->
-        <h1 class="sticky top-0 z-10 py-4 h-20 text-3xl font-semibold flex items-center justify-center bg-white">
+        <h1 class="sticky top-0 z-10 py-2 h-14 xl:h-16 text-3xl font-semibold flex items-center justify-center bg-white">
             StudiNotes
         </h1>
 
@@ -64,8 +63,9 @@
                             <i class="fa-duotone fa-address-card w-4 mr-4"></i>Profile
                         </a>
                     </li>
-                    <li><a href="liked.html" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                            <i class="fa-duotone fa-thumbs-up w-4 mr-4"></i>Liked
+                    <li><a href="smiles.html"
+                        class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                        <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Smiles
                         </a>
                     </li>
                     <li><a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
@@ -107,19 +107,18 @@
                                     <i class="fa-duotone fa-key-skeleton w-4 mr-3"></i>Password Change
                                 </a>
                             </li>
-
+                            
                             <li><a href="#"
-                                    class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                                    <span>
-                                        <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate profile
-                                    </span>
-                                    <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
-                                        <input type="checkbox" name="private" id="private" class="sr-only peer">
-                                        <span
-                                            class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
-                                    </label>
-                                </a>
-                            </li>
+                                class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                                <span>
+                                    <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate profile
+                                </span>
+                                <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
+                                    <input type="checkbox" name="private" id="private" class="sr-only peer">
+                                    <span class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
+                                </label>
+                            </a>
+                        </li>
 
                         </ul>
                     </div>
@@ -129,8 +128,7 @@
                     <div onclick="toggleSettingsDropdown()"
                         class="flex items-center justify-between py-2.5 px-4 cursor-pointer rounded-lg transition-all duration-200 hover:bg-gray-100">
                         <span>
-                            <i id="settingsIcon"
-                                class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
+                            <i id="settingsIcon" class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
                         </span>
                         <span id="moreIcon"><i class="fa-duotone fa-chevron-up transition-all duration-200"></i></span>
                     </div>
@@ -144,19 +142,18 @@
         </div>
     </div>
 
-
     <main class="lg:pl-[16rem]">
         <header
-            class="sticky top-0 z-30 py-2 px-4 h-16 xl:h-20 flex items-center justify-between border-b border-gray-200 bg-white">
-            <h1 class="lg:hidden text-3xl font-semibold">StudiNotes</h1>
+            class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
+            <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
 
             <!-- search button , hamburger button  -->
             <div class="flex items-center ml-auto gap-4">
 
                 <!-- uplaod button -->
                 <a href="priceTable.html"
-                    class="px-2.5 py-2 md:px-4 md:py-2.5 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-300 active:bg-gray-300 duration-200 uppercase">
-                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload</a>
+                    class="px-2.5 py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
+                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span class="hidden sm:block">&nbsp;materials</span></a>
 
                 
                 <!-- search button -->
@@ -174,247 +171,366 @@
 
             <section>
                 <!-- notes cards  -->
-                <div
-                class="max-md:pt-4 sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4">
+                <div class="sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-1.5 md:gap-3 lg:gap-4">
                 <!-- card 1 -->
-
-                    <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
-
-                        <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
-
-                            <!-- User Info -->
-                            <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Rayyan_balami</p>
-                                <p class="whitespace-nowrap text-xs">Posted 2 min ago</p>
-                            </div>
-
-                            <!-- share icon -->
-                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
-                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
-                            </div>
-
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">
+                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Rayyan_balami</span> ・
+                            <span class="text-xs">2m</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
                         </div>
+
 
                         <!-- image -->
                         <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://www.fotor.com/blog/wp-content/uploads/2019/10/Untitled-design-19.jpg" alt="" class="object-cover w-full h-full">
+                            <img src="https://i.pinimg.com/originals/ae/9e/9e/ae9e9e4941c71f84e1031a0f8d1c72b0.jpg"
+                                alt="" class="object-cover w-full h-full">
                         </div>
 
                         <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                </h2>
-                            </div>
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
                             </div>
 
                             <!-- likes -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
-                            </div>
-
-                            <!-- pages  -->
-                            <div class="whitespace-nowrap self-end">
-                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
                             </div>
 
                         </div>
-
 
                     </div>
                     <!--Card 2-->
-                    <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
-
-                        <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
-
-                            <!-- User Info -->
-                            <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Satish_chaudhary</p>
-                                <p class="whitespace-nowrap text-xs">Posted 12 hours ago</p>
-                            </div>
-
-                            <!-- share icon -->
-                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
-                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
-                            </div>
-
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">
+                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Satish_Chaudhary</span> ・
+                            <span class="text-xs">20m</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
                         </div>
+
 
                         <!-- image -->
                         <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/viBz0vPPEnA/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBmAKweLRlVc2oJHcM7TUrJAuU-Rg" alt="" class="object-cover w-full h-full">
+                            <img src="https://i0.wp.com/www.opindia.com/wp-content/uploads/2022/09/DR-Youtube-.jpg?resize=696%2C392&ssl=1"
+                                alt="" class="object-cover w-full h-full">
                         </div>
 
                         <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                </h2>
-                            </div>
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report
+                            </h2>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
                             </div>
 
                             <!-- likes -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
-                            </div>
-
-                            <!-- pages  -->
-                            <div class="whitespace-nowrap self-end">
-                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
                             </div>
 
                         </div>
-
 
                     </div>
                     <!--Card 3-->
-                    <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
-
-                        <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
-
-                            <!-- User Info -->
-                            <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@Nishanmahat</p>
-                                <p class="whitespace-nowrap text-xs">Posted 1 day ago</p>
-                            </div>
-
-                            <!-- share icon -->
-                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
-                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
-                            </div>
-
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Nishan_Mahat</span> ・
+                            <span class="text-xs">2h</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
                         </div>
+
 
                         <!-- image -->
                         <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/JU-8mtd8HjY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCtrtSpgQ2Da-qLGkCvJl7P8gS8BQ" alt="" class="object-cover w-full h-full">
+                            <img src="https://i.ytimg.com/vi/TNWC8l_rHbY/maxresdefault.jpg"
+                                alt="" class="object-cover w-full h-full">
                         </div>
 
                         <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                </h2>
-                            </div>
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                            </h2>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
                             </div>
 
                             <!-- likes -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
-                            </div>
-
-                            <!-- pages  -->
-                            <div class="whitespace-nowrap self-end">
-                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
                             </div>
 
                         </div>
-
 
                     </div>
                     <!--Card 4-->
-                    <div
-                        class="bg-gray-50 max-sm:py-2 max-sm:px-3 max-sm:bg-gray-50 space-y-2 md:max-w-md max-sm:border-y border-gray-200">
-
-                        <!-- User Info with time posted ago -->
-                        <div class="relative flex items-center justify-between gap-2">
-
-                            <!-- User Info -->
-                            <div>
-                                <p class="whitespace-nowrap text-sm font-semibold truncate">@John Doe</p>
-                                <p class="whitespace-nowrap text-xs">Posted 2 day ago</p>
-                            </div>
-
-                            <!-- share icon -->
-                            <div id="threeDotIcon" onclick="" class="cursor-pointer text-center">
-                                <i class="fa-duotone fa-circle-location-arrow text-lg"></i>
-                            </div>
-
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Sagar_KC</span> ・
+                            <span class="text-xs">2m</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
                         </div>
+
 
                         <!-- image -->
                         <div class="aspect-video overflow-hidden rounded-lg">
-                            <img src="https://i.ytimg.com/vi/-H8NNi-Kox0/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-CYAC0AWKAgwIABABGGUgZShlMA8=&rs=AOn4CLCa4Ni42WbKdsgSsz4ZBeMgTB2WlA" alt="" class="object-cover w-full h-full">
+                            <img src="https://i.ytimg.com/vi/GmjweDOYI90/maxresdefault.jpg"
+                                alt="" class="object-cover w-full h-full">
                         </div>
 
                         <!-- Title -->
-                            <div class="font-semibold">
-                                <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                    Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                    Download |
-                                    BCA | BCA
-                                </h2>
-                            </div>
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
 
-                        <!--views ,Like and pages -->
-                        <div
-                            class="flex items-center justify-between gap-x-2 flex-wrap text-sm leading-tight">
-                            
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
                             <!-- views -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-eye mr-2"></i>42 views
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
                             </div>
 
                             <!-- likes -->
                             <div class="whitespace-nowrap">
-                                <i class="fa-duotone fa-thumbs-up mr-2"></i>12 likes
-                            </div>
-
-                            <!-- pages  -->
-                            <div class="whitespace-nowrap self-end">
-                                <i class="fa-regular fa-paperclip mr-2"></i>1000 pages
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
                             </div>
 
                         </div>
 
+                    </div>
+                    <!--Card 5-->
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Modi</span> ・
+                            <span class="text-xs">2m</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
+                        </div>
+
+
+                        <!-- image -->
+                        <div class="aspect-video overflow-hidden rounded-lg">
+                            <img src="https://th.bing.com/th/id/OIP.fwWE7Ya8lcdoalQkvnej0AAAAA?rs=1&pid=ImgDetMain"
+                                alt="" class="object-cover w-full h-full">
+                        </div>
+
+                        <!-- Title -->
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
+
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
+                            </div>
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Card 6-->
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Murrrrrrrrrrrrraaa</span> ・
+                            <span class="text-xs">2d</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
+                        </div>
+
+
+                        <!-- image -->
+                        <div class="aspect-video overflow-hidden rounded-lg">
+                            <img src="https://i.ytimg.com/vi/tyv4IcqG2OA/hqdefault.jpg"
+                                alt="" class="object-cover w-full h-full">
+                        </div>
+
+                        <!-- Title -->
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
+
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
+                            </div>
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Card 7-->
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">Rayyan_balami</span> ・
+                            <span class="text-xs">1y</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
+                        </div>
+
+
+                        <!-- image -->
+                        <div class="aspect-video overflow-hidden rounded-lg">
+                            <img src="https://i.ytimg.com/vi/NZZgEsjH4OQ/maxresdefault.jpg"
+                                alt="" class="object-cover w-full h-full">
+                        </div>
+
+                        <!-- Title -->
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
+
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
+                            </div>
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!--Card 8-->
+                    <div class=" max-sm:py-2 max-sm:px-3 space-y-2 md:max-w-md">                        <!-- User Info ,time posted ago , three dot menu icon -->
+                        <div class="flex items-center w-full gap-1 ">
+                            <span class="truncate font-medium text-sm">QQQboi</span> ・
+                            <span class="text-xs">2m</span>
+                            <!-- three dot icon -->
+                            <span id="threeDotIcon" onclick="" class="cursor-pointer ml-auto">
+                                <i class="fa-duotone fa-ellipsis text-lg ml-1"></i>
+                            </span>
+                        </div>
+
+
+                        <!-- image -->
+                        <div class="aspect-video overflow-hidden rounded-lg">
+                            <img src="https://i.ytimg.com/vi/KlnwDE-YNrQ/maxresdefault.jpg"
+                                alt="" class="object-cover w-full h-full">
+                        </div>
+
+                        <!-- Title -->
+                        <div class="font-medium">
+                            <h2 class="line-clamp-2 sm:line-clamp-3 leading-tight">
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
+                                Download |
+                                BCA | BCA
+                            </h2>
+                        </div>
+
+                        <!--views ,smiles -->
+                        <div class="flex items-center justify-between gap-x-1 flex-wrap text-sm leading-tight">
+
+                            <!-- views -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-eye mr-2"></i>1000 views
+                            </div>
+
+                            <!-- likes -->
+                            <div class="whitespace-nowrap">
+                                <i class="fa-duotone fa-face-grin-wide mr-2"></i>100M Smiles
+                            </div>
+
+                        </div>
 
                     </div>
                 </div>
