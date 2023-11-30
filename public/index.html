@@ -12,12 +12,10 @@
 </head>
 
 <body>
-
-    <div id="sideNav"
-        class="flex flex-col fixed z-20 inset-0 top-0 max-sm:-left-full max-sm:w-full max-lg:-left-[16rem] transition-all duration-500 w-[16rem] pb-4 px-4 overflow-y-auto border-r border-gray-200 space-y-4  bg-white ">
+    
+    <div id="sideNav" class="flex flex-col fixed z-20 inset-0 top-0 max-sm:-left-full max-sm:w-full max-lg:-left-[16rem] transition-all duration-500 w-[16rem] pb-4 px-4 overflow-y-auto border-r border-gray-200 space-y-4  bg-white ">
         <!-- website name / logo -->
-        <h1
-            class="sticky top-0 z-10 py-2 h-14 xl:h-16 text-3xl font-semibold flex items-center justify-center bg-white">
+        <h1 class="sticky top-0 z-10 py-2 h-14 xl:h-16 text-3xl font-semibold flex items-center justify-center bg-white">
             StudiNotes
         </h1>
 
@@ -66,8 +64,8 @@
                         </a>
                     </li>
                     <li><a href="smiles.html"
-                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                            <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Smiles
+                        class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                        <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Smiles
                         </a>
                     </li>
                     <li><a href="saved.html" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
@@ -109,19 +107,18 @@
                                     <i class="fa-duotone fa-key-skeleton w-4 mr-3"></i>Password Change
                                 </a>
                             </li>
-
+                            
                             <li><a href="#"
-                                    class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                                    <span>
-                                        <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate profile
-                                    </span>
-                                    <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
-                                        <input type="checkbox" name="private" id="private" class="sr-only peer">
-                                        <span
-                                            class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
-                                    </label>
-                                </a>
-                            </li>
+                                class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                                <span>
+                                    <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate profile
+                                </span>
+                                <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
+                                    <input type="checkbox" name="private" id="private" class="sr-only peer">
+                                    <span class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
+                                </label>
+                            </a>
+                        </li>
 
                         </ul>
                     </div>
@@ -131,10 +128,9 @@
                     <div onclick="toggleSettingsDropdown()"
                         class="flex items-center justify-between py-2.5 px-4 cursor-pointer rounded-lg transition-all duration-200 hover:bg-gray-100">
                         <span>
-                            <i id="settingsIcon"
-                                class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
+                            <i id="settingsIcon" class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
                         </span>
-                        <span id="moreIcon"><i class="fa-duotone fa-chevron-up transition-all duration-200"></i></span>
+                        <span><i id="moreIcon" class="fa-duotone fa-chevron-up transition-all duration-200"></i></span>
                     </div>
 
 
@@ -157,10 +153,9 @@
                 <!-- uplaod button -->
                 <a href="priceTable.html"
                     class="px-2.5 py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
-                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
-                        class="hidden sm:block">&nbsp;materials</span></a>
+                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span class="hidden sm:block">&nbsp;materials</span></a>
 
-
+                
                 <!-- search button -->
                 <div id="hamburger" onclick="" class="cursor-pointer duration-100">
                     <i class="fa-duotone fa-search text-2xl"></i>
@@ -175,15 +170,17 @@
         <div>
 
             <section>
-                <!-- notes cards  -->
+                <!-- lab reports cards  -->
                 <div class="p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
                     <!-- card 1 -->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -191,7 +188,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -206,25 +203,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 2-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -232,7 +226,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -247,25 +241,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 3-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -273,7 +264,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -288,25 +279,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 4-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -314,7 +302,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -329,25 +317,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 5-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -355,7 +340,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -370,25 +355,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 6-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -396,7 +378,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -411,25 +393,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 7-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -437,7 +416,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -452,25 +431,22 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                     <!--Card 8-->
-                    <div>
+                    <div class="group">
                        
                         <!-- image -->
-                        <div class="aspect-[4/3] overflow-hidden rounded-lg">
-                            <img src="https://i.pinimg.com/564x/c9/2e/c7/c92ec7478b295cda141bb73586a2395a.jpg"
-                                alt="" class="object-cover w-full h-full">
+                        <div class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
+                            <a href="productPage.html">
+                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
+                                    alt="" class="object-cover w-full h-full">
+                            </a>
                         </div>
                         
                         <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
@@ -478,7 +454,7 @@
                             <!-- at @ icon -->
                             <i class="fa-solid fa-at"></i> 
                             <!-- username --> 
-                            <span class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</span>
+                            <a href="profile.html" class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
                             <!-- verified icon if pro user -->
                             <i class="fa-duotone fa-badge-check"></i>
                             <!-- time -->
@@ -493,20 +469,14 @@
                         </div>
 
                         <!-- Title -->
-                        <div class="pr-0.5 mt-1.5 font-semibold">
-                            <h2 class="line-clamp-2 leading-tight ml-5">
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                                Computer Fundamental Lab Report | BCA 1st Semester | 2021 | Handwritten | PDF |
-                                Download |
-                                BCA | BCA
-                            </h2>
-                        </div>
+                        <h2 class="pr-0.5 mt-1.5 font-semibold">
+                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
+                                A beautfiful girl with a beautiful smile thats not yours.
+                            </a>
+                        </h2>
 
                     </div>
                 </div>
-
 
                 <footer class="p-4 text-sm leading-6 mt-10">
                     <div class="mb-5 font-semibold flex items-center">
@@ -518,8 +488,8 @@
                         </a>
                     </div>
                     <div class="mx-auto lg:py-8"><a href="/">
-                            <div class="inline-flex gap-1.5 text-lg"><span class="font-medium text-gray-900">StudiNotes
-                                    🚀</span></div>
+                            <div class="inline-flex gap-1.5 text-lg"><span
+                                    class="font-medium text-gray-900">StudiNotes 🚀</span></div>
                         </a>
                         <div class="mt-6">
                             <p class="max-w-md leading-relaxed text-gray-600">StudiNotes is a platform for students to
@@ -537,12 +507,10 @@
                                 </ul>
                                 <p class="mt-4 text-sm text-gray-600 lg:mt-0">Created by<!-- --> <a
                                         href="https://github.com/markmead" rel="noreferrer" target="_blank"
-                                        class="inline-block font-medium text-gray-700 hover:text-gray-900">Rayyan
-                                        Balami</a>,
-                                    <a href="https://github.com/markmead" rel="noreferrer" target="_blank"
-                                        class="inline-block font-medium text-gray-700 hover:text-gray-900">Satish
-                                        Chaudhary</a>
-                                </p>
+                                        class="inline-block font-medium text-gray-700 hover:text-gray-900">Rayyan Balami</a>,
+                                        <a
+                                        href="https://github.com/markmead" rel="noreferrer" target="_blank"
+                                        class="inline-block font-medium text-gray-700 hover:text-gray-900">Satish Chaudhary</a></p>
                             </div>
                         </div>
                     </div>

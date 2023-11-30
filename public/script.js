@@ -21,5 +21,6 @@ function toggleSideNav() {
     settingsIcon.classList.toggle('rotate-90');
     moreIcon.classList.toggle('rotate-180');
   }
+  
 
  
