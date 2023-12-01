@@ -12,16 +12,16 @@
 </head>
 
 <body>
-    <main class="flex justify-center">
+    <main class="flex items-center justify-center">
 
     <!-- random image -->
-    <div class="img hidden lg:block lg:w-1/2 h-screen overflow-hidden rounded-br-full sticky top-0">
-        <img src="https://source.unsplash.com/random" alt="" class="w-full h-full object-cover" />
+    <div class="img hidden lg:block lg:w-1/2 h-screen self-start overflow-hidden rounded-br-full sticky top-0">
+        <img src="https://images.unsplash.com/photo-1559142382-6fe8aaed14c9?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="w-full h-full object-cover" />
     </div>
 
     <!-- form -->
-    <section class="m-4 lg:mx-10 lg:w-1/2">
-        <div class="max-w-md mx-auto space-y-4">
+    <section class="m-6 lg:w-1/2">
+        <div class="max-w-md mx-auto space-y-8">
           <h1 class="text-3xl text-center font-semibold mb-4">
             StudiNotes
           </h1>
@@ -32,7 +32,7 @@
             Hello new friend ❤️ <br>
             Join StudiNotes today and dive into a world of knowledge.
           </p>
-          <form action="login.php" method="post" class="space-y-4 mt-8 bg-gray-50 p-4 border border-gray-200 rounded-lg shadow-md">
+          <form action="login.php" method="post" class="space-y-4 bg-gray-50 p-4 border border-gray-300 rounded-lg shadow-md">
             <!-- full name -->
             <div>
                 <label for="name" class="block mb-2 text-sm font-semibold">Full Name</label>
@@ -79,7 +79,7 @@
                     <input id="remember" type="checkbox" class="w-4 h-4 border border-gray-300">
                     <label for="remember">I agree to </label>
                 </div>
-                <a href="#" class="font-medium text-primary-600 hover:underline dark:text-primary-500">&nbsp;Terms & conditions</a>
+                <a href="#" class="font-medium hover:underline">&nbsp;Terms & conditions</a>
             </div>
             <!-- login button -->
             <div>
@@ -93,7 +93,7 @@
             </div>
             <!-- login link -->
             <p class="text-sm text-gray-700">
-                Already have an account ! 😘 <a href="#" class="font-bold underline ">Log In</a>
+                Already have an account ! 😘 <a href="loginForm.html" class="font-bold underline ">Log In</a>
             </p>
               </form>
             <!-- share message -->
