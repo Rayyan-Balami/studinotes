@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rayyan Balami - StudiNotes</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css" />
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="sideNav"
+        class="flex flex-col fixed z-20 inset-0 top-0 max-sm:-left-full max-sm:w-full max-lg:-left-[16rem] transition-all duration-500 w-[16rem] pb-4 px-4 overflow-y-auto border-r border-gray-200 space-y-4 bg-white">
+        <!-- website name / logo -->
+        <h1
+            class="sticky top-0 z-10 py-2 h-14 xl:h-16 text-3xl font-semibold flex items-center justify-center bg-white">
+            StudiNotes
+        </h1>
+
+        <!-- navigation -->
+
+        <nav class="flex-grow space-y-4">
+            <!-- notes, questions, lab reports, requests -->
+            <div>
+                <h2 class="py-2.5 px-4 text-xs">MAIN MENU</h2>
+                <ul>
+                    <li>
+                        <a href="index.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            <i class="fa-duotone fa-memo-pad w-4 mr-4"></i>Notes
+                        </a>
+                    </li>
+                    <li>
+                        <a href="question.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            <i class="fa-duotone fa-file-circle-question w-4 mr-4"></i>Questions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="labReport.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            <i class="fa-duotone fa-display-code w-4 mr-4"></i>Lab Reports
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="request.html"
+                            class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            <span>
+                                <i class="fa-duotone fa-grid-round-2-plus w-4 mr-4"></i>Requests
+                            </span>
+                            <span class="text-sm">20</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- profile, copyright, subscription -->
+            <div>
+                <h2 class="py-2.5 px-4 text-xs">ACCOUNT MANAGEMENT</h2>
+                <ul>
+                    <li>
+                        <a href="profile.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                            <i class="fa-duotone fa-address-card w-4 mr-4"></i>Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="smiles.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                            <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Smiles
+                        </a>
+                    </li>
+                    <li>
+                        <a href="saved.html"
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                            <i class="fa-duotone fa-bookmark w-4 mr-4"></i>Saved
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                            <i class="fa-duotone fa-money-check-dollar-pen w-4 mr-4"></i>Subscriptions
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                            <i class="fa-duotone fa-copyright w-4 mr-4"></i>Copyright
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Sign up and Login button for public -->
+            <div>
+                <h2 class="py-2.5 px-4 text-xs">ACCOUNT</h2>
+                <ul>
+                    <li>
+                        <a href="signupForm.html"
+                            class="block py-2.5 px-4 text-center rounded-lg transition duration-200 text-white bg-gray-800 hover:bg-gray-900">
+                            Sign Up<i class="fa-duotone fa-user-graduate ml-4"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="loginForm.html"
+                            class="block py-2.5 px-4 mt-2.5 text-center rounded-lg transition duration-200 border border-gray-800 hover:bg-gray-100">
+                            Log In<i class="fa-duotone fa-arrow-right-to-arc ml-4"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- settings, logout -->
+        <div class="">
+            <ul>
+                <li class="relative">
+                    <!-- settings dropdown -->
+                    <div id="settingsDropdown"
+                        class="hidden absolute p-2 -top-[12.5rem] w-full bg-white border border-gray-300 rounded-lg shadow-xl transition-all duration-500">
+                        <h2 class="py-2.5 px-4 text-xs">SETTINGS OPTIONS</h2>
+                        <ul>
+                            <li>
+                                <a href="myInformation.html"
+                                    class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                                    <i class="fa-duotone fa-user-pen w-4 mr-3"></i>My Information
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                                    <i class="fa-duotone fa-key-skeleton w-4 mr-3"></i>Password
+                                    Change
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#"
+                                    class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                                    <span>
+                                        <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate
+                                        profile
+                                    </span>
+                                    <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
+                                        <input type="checkbox" name="private" id="private" class="sr-only peer" />
+                                        <span
+                                            class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
+                                    </label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- settings menu  -->
+                    <div onclick="toggleSettingsDropdown()"
+                        class="flex items-center justify-between py-2.5 px-4 cursor-pointer rounded-lg transition-all duration-200 hover:bg-gray-100">
+                        <span>
+                            <i id="settingsIcon"
+                                class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
+                        </span>
+                        <span><i id="moreIcon" class="fa-duotone fa-chevron-up transition-all duration-200"></i></span>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100"><i
+                            class="fa-duotone fa-arrow-right-from-arc w-4 mr-4"></i>Log
+                        out</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <main class="lg:pl-[16rem]">
+        <header
+            class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
+            <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
+
+            <!-- search button , hamburger button  -->
+            <div class="flex items-center ml-auto gap-4">
+                <!-- uplaod button -->
+                <a href="priceTable.html"
+                    class="px-2.5 py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
+                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
+                        class="hidden sm:block">&nbsp;materials</span></a>
+
+                <!-- search button -->
+                <div id="hamburger" onclick="" class="cursor-pointer duration-100">
+                    <i class="fa-duotone fa-search text-2xl"></i>
+                </div>
+
+                <!-- hamburger button for mobile -->
+                <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
+                    <i class="fa-duotone fa-bars text-2xl"></i>
+                </div>
+            </div>
+        </header>
+        <div>
+            <section>
+                <!-- personal information title -->
+                <div class="p-4 sm:p-6">
+                    <div class="relative mx-auto max-w-[37.5rem] py-16 text-center">
+                        <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
+                            My Information
+                        </h1>
+                        <a href="t&c.html" class="block mt-4 text-base underline text-slate-600">
+                            Read our terms and conditions
+                        </a>
+                    </div>
+                </div>
+
+                <!-- personal information content -->
+                <div class="p-4 sm:p-6 mx-auto max-w-[60rem] space-y-12">
+                    <!-- profile content -->
+                    <div class="border-b border-gray-900/10 pb-12">
+                        <h2 class="text-xl font-semibold text-gray-900">
+                            <i class="fa-duotone fa-square-user w-4 mr-4"></i>Profile
+                        </h2>
+                        <p class="mt-1 text-sm text-gray-600">
+                            This information will be displayed publicly so be careful what
+                            you share.
+                        </p>
+                        <!-- form for user name and about -->
+                        <form action="">
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                                <!-- username -->
+                                <div class="sm:col-span-3">
+                                    <label for="username" class="block mb-2 text-sm font-semibold">User Name</label>
+                                    <input type="text" placeholder="rynb_hir000" required name="username" id="username"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+
+                                <!-- about -->
+                                <div class="col-span-full">
+                                    <label for="about" class="block mb-2 text-sm font-semibold">About</label>
+                                    <textarea required id="about" name="about" rows="3"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg"></textarea>
+
+                                    <p class="mt-2 text-sm text-gray-600">
+                                        Write a few sentences about yourself.
+                                    </p>
+                                </div>
+
+                                <!-- save button -->
+                                <button type="submit" name="submit"
+                                    class="px-5 py-3 text-center text-white bg-gray-800 rounded-lg">
+                                    Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- personal information content -->
+                    <div class="border-b border-gray-900/10 pb-12">
+                        <h2 class="text-xl font-semibold text-gray-900">
+                            <i class="fa-duotone fa-address-card w-4 mr-4"></i>Personal Information
+                        </h2>
+                        <p class="mt-1 text-sm text-gray-600">
+                            We reserve the right to feature select details on the public profile card.
+                        </p>
+                        <!-- form for full name, gender, student/teacher, school name, email -->
+                        <form action="">
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                                <!-- full name -->
+                                <div class="sm:col-span-3">
+                                    <label for="name" class="block mb-2 text-sm font-semibold">Full Name</label>
+                                    <input type="text" placeholder="Hakuna Matata" required name="name" id="name"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+
+                                <!-- gender -->
+                                <div class="sm:col-span-3">
+                                    <label class="block mb-2 text-sm font-semibold">Gender</label>
+                                    <div class="py-3 mt-2 flex items-center gap-4 ">
+                                        <input type="radio" name="gender" id="male" value="male" /><label
+                                            for="male">Male</label>
+                                        <input type="radio" name="gender" id="female" value="male" /><label
+                                            for="female">Female</label>
+                                        <input type="radio" name="gender" id="preferNotToSay"
+                                            value="prefer not to say" /><label for="preferNotToSay">Prefer not to
+                                            say</label>
+                                    </div>
+                                </div>
+
+                                <!-- I am a student or teacher -->
+                                <div class="relative sm:col-span-2">
+                                    <label for="iam" class="block mb-2 text-sm font-semibold">I am a ?</label>
+                                    <select name="iam" id="iam"
+                                        class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                        <option value="student" name="iam">Student</option>
+                                        <option value="teacher" name="iam">Teacher</option>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
+                                        <i class="fa-solid fa-sort"></i>
+                                    </div>
+                                </div>
+
+                                <!-- school name (optional) -->
+                                <div class="sm:col-span-full">
+                                    <label for="school" class="block mb-2 text-sm font-semibold">School/ College
+                                        Name</label>
+                                    <input type="text" placeholder="Enter school/ College name" name="school"
+                                        id="school"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+
+                                <!-- email -->
+                                <div class="sm:col-span-full">
+                                    <label for="email" class="block mb-2 text-sm font-semibold">Email Address</label>
+                                    <input type="email" placeholder="StudiNotes@gmail.com" required name="email"
+                                        id="email"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+
+                                <!-- save button -->
+                                <button type="submit" name="submit"
+                                    class="px-5 py-3 text-center text-white bg-gray-800 rounded-lg">
+                                    Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- change password -->
+                    <div class="border-b border-gray-900/10 pb-12">
+                        <h2 class="text-xl font-semibold text-gray-900">
+                            <i class="fa-duotone fa-key w-4 mr-4"></i>Change Password
+                        </h2>
+                        <p class="mt-1 text-sm text-gray-600">
+                            Ensure your account is using a long, random password to stay secure.
+                        </p>
+                        <!-- form for full name, gender, student/teacher, school name, email -->
+                        <form action="">
+                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                                <!-- old password -->
+                                <div class="sm:col-span-3">
+                                    <label for="oldPassword" class="block mb-2 text-sm font-semibold">Old
+                                        Password</label>
+                                    <input type="password" placeholder="••••••••" required name="oldPassword"
+                                        id="oldPassword"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+                                <!-- new password -->
+                                <div class="sm:col-span-3 sm:row-start-2">
+                                    <label for="newPassword" class="block mb-2 text-sm font-semibold">New
+                                        Password</label>
+                                    <input type="password" placeholder="••••••••" required name="newPassword"
+                                        id="newPassword"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+                                <!-- confirm password -->
+                                <div class="sm:col-span-3 sm:row-start-3">
+                                    <label for="confirmPassword" class="block mb-2 text-sm font-semibold">Confirm
+                                        Password</label>
+                                    <input type="password" placeholder="••••••••" required name="confirmPassword"
+                                        id="confirmPassword"
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                                </div>
+
+                                <!-- save button -->
+                                <button type="submit" name="submit"
+                                    class="px-5 py-3 text-center text-white bg-gray-800 rounded-lg sm:row-start-4">
+                                    Save
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- notification -->
+                    <div class="">
+                        <h2 class="text-base font-semibold leading-7 text-gray-900">
+                            Notifications
+                        </h2>
+                        <p class="mt-1 text-sm text-gray-600">
+                            We'll always let you know about important changes, but you pick
+                            what else you want to hear about.
+                        </p>
+
+                        <div class="mt-10 space-y-10">
+                            <fieldset>
+                                <legend class="text-sm font-semibold text-gray-900">
+                                    By Email
+                                </legend>
+                                <div class="mt-6 space-y-6">
+                                    <div class="relative flex gap-x-3">
+                                        <div class="flex h-6 items-center">
+                                            <input id="comments" name="comments" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        </div>
+                                        <div class="text-sm">
+                                            <label for="comments" class="font-medium text-gray-900">Comments</label>
+                                            <p class="text-gray-500">
+                                                Get notified when someones posts a comment on a
+                                                posting.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="relative flex gap-x-3">
+                                        <div class="flex h-6 items-center">
+                                            <input id="candidates" name="candidates" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        </div>
+                                        <div class="text-sm">
+                                            <label for="candidates" class="font-medium text-gray-900">Candidates</label>
+                                            <p class="text-gray-500">
+                                                Get notified when a candidate applies for a job.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="relative flex gap-x-3">
+                                        <div class="flex h-6 items-center">
+                                            <input id="offers" name="offers" type="checkbox"
+                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        </div>
+                                        <div class="text-sm">
+                                            <label for="offers" class="font-medium text-gray-900">Offers</label>
+                                            <p class="text-gray-500">
+                                                Get notified when a candidate accepts or rejects an
+                                                offer.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <legend class="text-sm font-semibold text-gray-900">
+                                    Push Notifications
+                                </legend>
+                                <p class="mt-1 text-sm text-gray-600">
+                                    These are delivered via SMS to your mobile phone.
+                                </p>
+                                <div class="mt-6 space-y-6">
+                                    <div class="flex items-center gap-x-3">
+                                        <input id="push-everything" name="push-notifications" type="radio"
+                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        <label for="push-everything"
+                                            class="block text-sm font-medium text-gray-900">Everything</label>
+                                    </div>
+                                    <div class="flex items-center gap-x-3">
+                                        <input id="push-email" name="push-notifications" type="radio"
+                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        <label for="push-email" class="block text-sm font-medium text-gray-900">Same as
+                                            email</label>
+                                    </div>
+                                    <div class="flex items-center gap-x-3">
+                                        <input id="push-nothing" name="push-notifications" type="radio"
+                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
+                                        <label for="push-nothing" class="block text-sm font-medium text-gray-900">No
+                                            push
+                                            notifications</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- footer -->
+                <footer class="p-4 sm:p-6">
+                    <!-- show more button  -->
+                    <div class="grid place-content-center mt-10">
+                        <button
+                            class="px-5 py-2 text-sm tracking-wide text-white bg-gray-800 rounded-lg hover:bg-gray-900 transition-colors duration-300 transform">
+                            Show More
+                        </button>
+                    </div>
+
+                    <!-- footer content  -->
+                    <div class="mt-10 flex gap-1 flex-col items-center sm:flex-row sm:justify-between text-sm text-gray-700">
+                        <p>© Copyright 2021. All Rights Reserved.</p>
+
+                        <div class="flex gap-4">
+                            <a href="t&c.html">Tearms & Conditions</a>
+                            <a href="#">Privacy</a>
+                            <a href="#">Cookies</a>
+                        </div>
+
+                        <div>
+                            Developers : <a href="#">Rayyan Balami</a> &amp;
+                            <a href="#">Satish Chaudhary</a>
+                        </div>
+                    </div>
+                </footer>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>
