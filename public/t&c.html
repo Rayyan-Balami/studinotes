@@ -61,34 +61,29 @@
         <div>
             <h2 class="py-2.5 px-4 text-xs">ACCOUNT MANAGEMENT</h2>
             <ul>
-                <li>
-                    <a href="profile.html"
+                <li><a href="profile.html"
                         class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                         <i class="fa-duotone fa-address-card w-4 mr-4"></i>Profile
                     </a>
                 </li>
-                <li>
-                    <a href="smiles.html"
+                <li><a href="likes.html"
                         class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                        <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Smiles
+                        <i class="fa-duotone fa-face-grin-wide w-4 mr-4"></i>Likes
                     </a>
                 </li>
-                <li>
-                    <a href="saved.html"
-                        class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                <li><a href="saved" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                         <i class="fa-duotone fa-bookmark w-4 mr-4"></i>Saved
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                <li><a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                         <i class="fa-duotone fa-money-check-dollar-pen w-4 mr-4"></i>Subscriptions
                     </a>
                 </li>
-                <li>
-                    <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
+                <li><a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                         <i class="fa-duotone fa-copyright w-4 mr-4"></i>Copyright
                     </a>
                 </li>
+
             </ul>
         </div>
 
@@ -115,91 +110,74 @@
     <!-- settings, logout -->
     <div class="">
         <ul>
+
             <li class="relative">
                 <!-- settings dropdown -->
                 <div id="settingsDropdown"
-                    class="hidden absolute p-2 -top-[12.5rem] w-full bg-white border border-gray-300 rounded-lg shadow-xl transition-all duration-500">
+                    class="hidden absolute p-2 -top-[10rem] w-full bg-white border border-gray-300 rounded-lg shadow-xl transition-all duration-500">
                     <h2 class="py-2.5 px-4 text-xs">SETTINGS OPTIONS</h2>
                     <ul>
-                        <li>
-                            <a href="myInformation.html"
+                        <li><a href="myInformation.html"
                                 class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                                 <i class="fa-duotone fa-user-pen w-4 mr-3"></i>My Information
                             </a>
                         </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                                <i class="fa-duotone fa-key-skeleton w-4 mr-3"></i>Password
-                                Change
+                        <li><a href="password&security.html"
+                                class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100 whitespace-nowrap">
+                                <i class="fa-duotone fa-key w-4 mr-3"></i>Password & Security
                             </a>
                         </li>
 
-                        <li>
-                            <a href="#"
-                                class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
-                                <span>
-                                    <i class="fa-duotone fa-lock-keyhole w-4 mr-3"></i>Pivate
-                                    profile
-                                </span>
-                                <label for="private" class="relative w-10 h-5 bg-gray-300 rounded-full">
-                                    <input type="checkbox" name="private" id="private" class="sr-only peer" />
-                                    <span
-                                        class="absolute top-1 left-1 w-3 h-3 bg-white rounded-full peer-checked:bg-black peer-checked:left-6 transition-all duration-300"></span>
-                                </label>
-                            </a>
-                        </li>
                     </ul>
                 </div>
+
 
                 <!-- settings menu  -->
                 <div onclick="toggleSettingsDropdown()"
                     class="flex items-center justify-between py-2.5 px-4 cursor-pointer rounded-lg transition-all duration-200 hover:bg-gray-100">
                     <span>
-                        <i id="settingsIcon"
-                            class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
+                        <i id="settingsIcon" class="fa-duotone fa-gear-complex w-4 mr-4 transition-all duration-700"></i>Setting
                     </span>
                     <span><i id="moreIcon" class="fa-duotone fa-chevron-up transition-all duration-200"></i></span>
                 </div>
+
+
             </li>
-            <li>
-                <a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100"><i
-                        class="fa-duotone fa-arrow-right-from-arc w-4 mr-4"></i>Log
-                    out</a>
-            </li>
+            <li><a href="#" class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100"><i
+                        class="fa-duotone fa-arrow-right-from-arc w-4 mr-4"></i>Log out</a></li>
+
         </ul>
     </div>
 </div>
 
     <main class="lg:pl-[16rem]">
         <header
-            class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
-            <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
+        class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
+        <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
 
-            <!-- search button , hamburger button  -->
-            <div class="flex items-center ml-auto gap-4">
-                <!-- uplaod button -->
-                <a href="priceTable.html"
-                    class="px-2.5 py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
-                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
-                        class="hidden sm:block">&nbsp;materials</span></a>
-
-                <!-- search button -->
-                <div id="hamburger" onclick="" class="cursor-pointer duration-100">
-                    <i class="fa-duotone fa-search text-2xl"></i>
-                </div>
-
-                <!-- hamburger button for mobile -->
-                <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
-                    <i class="fa-duotone fa-bars text-2xl"></i>
-                </div>
+        <!-- search button , hamburger button  -->
+        <div class="flex items-center ml-auto gap-4">
+            <!-- uplaod button -->
+            <a href="upload.html"
+                class="px-2.5 py-1.5 sm:py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
+                <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
+                    class="hidden sm:block">&nbsp;materials</span></a>
+            <!-- search button -->
+            <div id="search" onclick="" class="cursor-pointer duration-100">
+                <i class="fa-regular fa-search text-xl"></i>
             </div>
-        </header>
+
+            <!-- hamburger button for mobile -->
+            <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
+                <i class="fa-regular fa-bars text-2xl"></i>
+            </div>
+        </div>
+    </header>
         <div>
             <section>
                 <!-- privacy policy title -->
                 <div class="p-4 sm:p-6">
-                    <div class="relative mx-auto max-w-[37.5rem] py-16 text-center">
+                    <div class="relative mx-auto max-w-[37.5rem] py-12 text-center">
                         <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
                             Terms &amp; Conditions
                         </h1>

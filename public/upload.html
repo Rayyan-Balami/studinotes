@@ -28,26 +28,26 @@
                 <ul>
                     <li>
                         <a href="index.html"
-                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                             <i class="fa-duotone fa-memo-pad w-4 mr-4"></i>Notes
                         </a>
                     </li>
                     <li>
                         <a href="question.html"
-                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                             <i class="fa-duotone fa-file-circle-question w-4 mr-4"></i>Questions
                         </a>
                     </li>
                     <li>
                         <a href="labReport.html"
-                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            class="block py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                             <i class="fa-duotone fa-display-code w-4 mr-4"></i>Lab Reports
                         </a>
                     </li>
 
                     <li>
                         <a href="request.html"
-                            class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-50">
+                            class="flex items-center justify-between py-2.5 px-4 rounded-lg transition duration-200 hover:bg-gray-100">
                             <span>
                                 <i class="fa-duotone fa-grid-round-2-plus w-4 mr-4"></i>Requests
                             </span>
@@ -181,39 +181,63 @@
     </header>
         <div>
             <section>
-                <!-- personal information title -->
+                <!-- upload study materials title -->
                 <div class="p-4 sm:p-6">
                     <div class="relative mx-auto max-w-[37.5rem] py-12 text-center">
                         <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl">
-                            New Request
+                            Upload Study Materials
                         </h1>
-                        <p class="mt-4 text-base text-slate-600">
-                            Fill the form below to request for a new note, question or lab
-                            report.
+                        <p class="mt-4 text-3xl space-x-6 text-slate-700">
+                            <i class="fa-duotone fa-memo-pad"></i>
+                            <i class="fa-duotone fa-file-circle-question"></i>
+                            <i class="fa-duotone fa-display-code"></i>
                         </p>
-                        <a href="t&c.html" class="block mt-2 text-base underline text-slate-600">
-                            Read our terms and conditions
-                        </a>
+                        <p class="mt-4 text-base text-slate-600">
+                            Fill the form below to upload your study materials. <br>
+                            Help others , others will help you.
+                        </p>
                     </div>
                 </div>
 
                 <!-- form for title, subject, description -->
                 <div class="p-4 sm:p-6 mx-auto max-w-[60rem]">
                     <h2 class="text-xl font-semibold text-gray-900">
-                        <i class="fa-duotone fa-grid-round-2-plus w-4 mr-4"></i>Request
-                        Details
+                        <i class="fa-duotone fa-pencil w-4 mr-4"></i>Study Materials
                     </h2>
                     <p class="mt-1 text-sm text-gray-600">
                         Details must be Correct, Complete and Concise [CCC], so that other
-                        students can understand your request.
+                        students can understand your materials.
                     </p>
                     <!-- form for full name, gender, student/teacher, school name, email -->
                     <form action="">
                         <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+
+                            <!-- responding to if comming from respond button -->
+                            <div
+                                class="relative col-span-full text-sm p-4 space-y-2  rounded-lg border border-gray-300 bg-gray-50">
+                             
+                                <!-- responding to  -->
+                                <div class="flex gap-2">
+                                    <span class="whitespace-nowrap">Responding to :</span>
+                                    <input type="text" disabled value="user123" class="w-full bg-transparent">
+                                </div>
+                                <!-- title -->
+                                <div class="flex gap-2">
+                                    <span class="whitespace-nowrap">Title :</span>
+                                    <input type="text" disabled value="title XYZ" class="w-full bg-transparent">
+                                </div>
+                                <!-- subject -->
+                                <div class="flex gap-2">
+                                    <span class="whitespace-nowrap">Subject :</span>
+                                    <input type="text" disabled value="subject XYZ" class="w-full bg-transparent">
+                                </div>
+                            </div>
+
                             <!-- title -->
                             <div class="col-span-full">
                                 <label for="title" class="block mb-2 text-sm font-semibold">Title</label>
-                                <input type="text" placeholder="I need a note on functions in C programming language." required name="title" id="title"
+                                <input type="text" placeholder="functions in C programming language." required
+                                    name="title" id="title"
                                     class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                             </div>
 
@@ -225,18 +249,32 @@
                                 </textarea>
 
                                 <p class="mt-2 text-sm text-gray-600">
-                                    Describe what you need in [CCC] format.
+                                    Describe what you are covering in your study materials.
                                 </p>
                             </div>
 
-                            <!-- I need a ? -->
+                            <!-- It is a ? -->
                             <div class="relative sm:col-span-2">
-                                <label for="ineeda" class="block mb-2 text-sm font-semibold">I need a ?</label>
-                                <select name="ineeda" id="ineeda" required
+                                <label for="itisa" class="block mb-2 text-sm font-semibold">It is a ?</label>
+                                <select name="itisa" id="itisa" required
                                     class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
-                                    <option value="note" name="ineeda">Note</option>
-                                    <option value="question" name="ineeda">Question</option>
-                                    <option value="lab report" name="ineeda">Lab Report</option>
+                                    <option value="note" name="itisa">Note</option>
+                                    <option value="question" name="itisa">Question</option>
+                                    <option value="lab report" name="itisa">Lab Report</option>
+                                </select>
+                                <div class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
+                                    <i class="fa-solid fa-sort"></i>
+                                </div>
+                            </div>
+
+                            <!-- Format ? -->
+                            <div class="relative sm:col-span-2">
+                                <label for="format" class="block mb-2 text-sm font-semibold">Format ?</label>
+                                <select name="format" id="format" required
+                                    class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                    <option value="handwritten" name="format">Handwritten</option>
+                                    <option value="typed" name="format">Typed</option>
+                                    <option value="photo" name="format">Photo</option>
                                 </select>
                                 <div class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
                                     <i class="fa-solid fa-sort"></i>
@@ -244,9 +282,19 @@
                             </div>
 
                             <!-- subject -->
-                            <div class="sm:col-span-4">
+                            <div class="sm:col-span-3">
                                 <label for="subject" class="block mb-2 text-sm font-semibold">Subject</label>
                                 <input type="text" placeholder="C Programming" required name="subject" id="subject"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                            </div>
+
+                            <!-- author / source / credits -->
+                            <div class="sm:col-span-3">
+                                <label for="subject" class="block mb-2 text-sm font-semibold">Author / Source / Credits
+                                    [ Be
+                                    Truthful ]</label>
+                                <input type="text" placeholder="Hakuna from YT learnWorld" required name="subject"
+                                    id="subject"
                                     class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                             </div>
 
@@ -278,10 +326,28 @@
                                 </div>
                             </div>
 
+                            <!-- upload -->
+                            <div class="col-span-full">
+                                <label for="file-upload"
+                                    class="flex flex-col gap-2 text-center cursor-pointer rounded-lg border-2 border-dashed border-gray-400 px-6 py-10 hover:bg-gray-100 transition-all duration-400">
+                                    <i class="fa-duotone fa-file-pdf text-5xl"></i>
+                                    <span>Upload a file or drag and drop</span>
+                                    <input id="file-upload" name="file-upload" type="file" accept=".pdf" required
+                                        class="hidden" />
+                                    <p class="text-xs text-gray-600">PDF up to 10MB</p>
+                                </label>
+                                <p class="mt-2 text-sm text-gray-600">
+                                    Use copyright watermark, names, signatures etc in your PDF.
+                                    If someone is using your materials without giving you credits, report it. <br>
+                                </p>
+                            </div>
+
+
+
                             <!-- save button -->
                             <button type="submit" name="submit"
                                 class="py-3 text-center text-white bg-gray-800 rounded-lg">
-                                Request
+                                Upload / Respond
                             </button>
                         </div>
                     </form>
