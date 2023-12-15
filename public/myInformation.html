@@ -230,7 +230,7 @@
                     </div>
 
                     <!-- personal information content -->
-                    <div class="border-b border-gray-900/10 pb-12">
+                    <div class="pb-12">
                         <h2 class="text-xl font-semibold text-gray-900">
                             <i class="fa-duotone fa-address-card w-4 mr-4"></i>Personal Information
                         </h2>
@@ -241,32 +241,33 @@
                         <form action="">
                             <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
 
-                                <!-- full name -->
+                                <!-- full name (required)-->
                                 <div class="sm:col-span-3">
                                     <label for="name" class="block mb-2 text-sm font-semibold">Full Name</label>
                                     <input type="text" placeholder="Hakuna Matata" required name="name" id="name"
                                         class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                                 </div>
 
-                                <!-- gender -->
+                                <!-- gender (optional)-->
                                 <div class="sm:col-span-3">
                                     <label class="block mb-2 text-sm font-semibold">Gender</label>
                                     <div class="py-3 mt-2 flex items-center gap-4 ">
-                                        <input type="radio" name="gender" id="male" value="male" /><label
+                                        <input type="radio" name="gender" id="male" value="male" class="w-4 h-4"/><label
                                             for="male">Male</label>
-                                        <input type="radio" name="gender" id="female" value="male" /><label
+                                        <input type="radio" name="gender" id="female" value="male" class="w-4 h-4"/><label
                                             for="female">Female</label>
                                         <input type="radio" name="gender" id="preferNotToSay"
-                                            value="prefer not to say" /><label for="preferNotToSay">Prefer not to
+                                            value="prefer not to say" class="w-4 h-4"/><label for="preferNotToSay">Prefer not to
                                             say</label>
                                     </div>
                                 </div>
 
-                                <!-- I am a student or teacher -->
+                                <!-- I am a student or teacher (required)-->
                                 <div class="relative sm:col-span-2">
                                     <label for="iam" class="block mb-2 text-sm font-semibold">I am a ?</label>
-                                    <select name="iam" id="iam"
+                                    <select name="iam" id="iam" required
                                         class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                        <option value="" disabled selected>Select an option...</option>
                                         <option value="student" name="iam">Student</option>
                                         <option value="teacher" name="iam">Teacher</option>
                                     </select>
@@ -274,6 +275,33 @@
                                         class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
                                         <i class="fa-solid fa-sort"></i>
                                     </div>
+                                </div>
+
+                                <!-- Education Level (requires)-->
+                                <div class="relative sm:col-span-2">
+                                    <label for="education-level" class="block mb-2 text-sm font-semibold">Education Level</label>
+                                    <select name="education-level" id="education-level" required
+                                        class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                        <option value="" disabled selected>Select an option...</option>
+                                        <option value="School" name="education-level">School</option>
+                                        <option value="+2" name="education-level">+2</option>
+                                        <option value="Bachelor" name="education-level">Bachelor</option>
+                                        <option value="Master" name="education-level">Master</option>
+                                        <option value="PhD" name="education-level">PhD</option>
+                                    </select>
+                                    <div
+                                        class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
+                                        <i class="fa-solid fa-sort"></i>
+                                    </div>
+                                </div>
+
+                                <!-- enrolled course (required)-->
+                                <div class="sm:col-span-full">
+                                    <label for="enrolled-course" class="block mb-2 text-sm font-semibold">Enrolled Course</label>
+                                    <input type="text" placeholder="Bachelor in Computer Application" name="enrolled-course"
+                                        id="enrolled-course"
+                                        required
+                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                                 </div>
 
                                 <!-- school name (optional) -->
@@ -285,7 +313,7 @@
                                         class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                                 </div>
 
-                                <!-- email -->
+                                <!-- email (required)-->
                                 <div class="sm:col-span-full">
                                     <label for="email" class="block mb-2 text-sm font-semibold">Email Address</label>
                                     <input type="email" placeholder="StudiNotes@gmail.com" required name="email"
@@ -302,151 +330,10 @@
                         </form>
                     </div>
 
-                    <!-- change password -->
-                    <div class="border-b border-gray-900/10 pb-12">
-                        <h2 class="text-xl font-semibold text-gray-900">
-                            <i class="fa-duotone fa-key w-4 mr-4"></i>Change Password
-                        </h2>
-                        <p class="mt-1 text-sm text-gray-600">
-                            Ensure your account is using a long, random password to stay secure.
-                        </p>
-                        <!-- form for full name, gender, student/teacher, school name, email -->
-                        <form action="">
-                            <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
-
-                                <!-- old password -->
-                                <div class="sm:col-span-3">
-                                    <label for="oldPassword" class="block mb-2 text-sm font-semibold">Old
-                                        Password</label>
-                                    <input type="password" placeholder="••••••••" required name="oldPassword"
-                                        id="oldPassword"
-                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
-                                </div>
-                                <!-- new password -->
-                                <div class="sm:col-span-3 sm:row-start-2">
-                                    <label for="newPassword" class="block mb-2 text-sm font-semibold">New
-                                        Password</label>
-                                    <input type="password" placeholder="••••••••" required name="newPassword"
-                                        id="newPassword"
-                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
-                                </div>
-                                <!-- confirm password -->
-                                <div class="sm:col-span-3 sm:row-start-3">
-                                    <label for="confirmPassword" class="block mb-2 text-sm font-semibold">Confirm
-                                        Password</label>
-                                    <input type="password" placeholder="••••••••" required name="confirmPassword"
-                                        id="confirmPassword"
-                                        class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
-                                </div>
-
-                                <!-- save button -->
-                                <button type="submit" name="submit"
-                                    class="px-5 py-3 text-center text-white bg-gray-800 rounded-lg sm:row-start-4">
-                                    Save
-                                </button>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- notification -->
-                    <div class="">
-                        <h2 class="text-base font-semibold leading-7 text-gray-900">
-                            Notifications
-                        </h2>
-                        <p class="mt-1 text-sm text-gray-600">
-                            We'll always let you know about important changes, but you pick
-                            what else you want to hear about.
-                        </p>
-
-                        <div class="mt-10 space-y-10">
-                            <fieldset>
-                                <legend class="text-sm font-semibold text-gray-900">
-                                    By Email
-                                </legend>
-                                <div class="mt-6 space-y-6">
-                                    <div class="relative flex gap-x-3">
-                                        <div class="flex h-6 items-center">
-                                            <input id="comments" name="comments" type="checkbox"
-                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        </div>
-                                        <div class="text-sm">
-                                            <label for="comments" class="font-medium text-gray-900">Comments</label>
-                                            <p class="text-gray-500">
-                                                Get notified when someones posts a comment on a
-                                                posting.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="relative flex gap-x-3">
-                                        <div class="flex h-6 items-center">
-                                            <input id="candidates" name="candidates" type="checkbox"
-                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        </div>
-                                        <div class="text-sm">
-                                            <label for="candidates" class="font-medium text-gray-900">Candidates</label>
-                                            <p class="text-gray-500">
-                                                Get notified when a candidate applies for a job.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="relative flex gap-x-3">
-                                        <div class="flex h-6 items-center">
-                                            <input id="offers" name="offers" type="checkbox"
-                                                class="h-4 w-4 rounded border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        </div>
-                                        <div class="text-sm">
-                                            <label for="offers" class="font-medium text-gray-900">Offers</label>
-                                            <p class="text-gray-500">
-                                                Get notified when a candidate accepts or rejects an
-                                                offer.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </fieldset>
-                            <fieldset>
-                                <legend class="text-sm font-semibold text-gray-900">
-                                    Push Notifications
-                                </legend>
-                                <p class="mt-1 text-sm text-gray-600">
-                                    These are delivered via SMS to your mobile phone.
-                                </p>
-                                <div class="mt-6 space-y-6">
-                                    <div class="flex items-center gap-x-3">
-                                        <input id="push-everything" name="push-notifications" type="radio"
-                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        <label for="push-everything"
-                                            class="block text-sm font-medium text-gray-900">Everything</label>
-                                    </div>
-                                    <div class="flex items-center gap-x-3">
-                                        <input id="push-email" name="push-notifications" type="radio"
-                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        <label for="push-email" class="block text-sm font-medium text-gray-900">Same as
-                                            email</label>
-                                    </div>
-                                    <div class="flex items-center gap-x-3">
-                                        <input id="push-nothing" name="push-notifications" type="radio"
-                                            class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600" />
-                                        <label for="push-nothing" class="block text-sm font-medium text-gray-900">No
-                                            push
-                                            notifications</label>
-                                    </div>
-                                </div>
-                            </fieldset>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- footer -->
                 <footer class="p-4 sm:p-6">
-                    <!-- show more button  -->
-                    <div class="grid place-content-center mt-10">
-                        <button
-                            class="px-5 py-2 text-sm tracking-wide text-white bg-gray-800 rounded-lg hover:bg-gray-900 transition-colors duration-300 transform">
-                            Show More
-                        </button>
-                    </div>
-
                     <!-- footer content  -->
                     <div class="mt-10 flex gap-1 flex-col items-center sm:flex-row sm:justify-between text-sm text-gray-700">
                         <p>© Copyright 2021. All Rights Reserved.</p>

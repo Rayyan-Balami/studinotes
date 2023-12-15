@@ -158,27 +158,27 @@
 
     <main class="lg:pl-[16rem]">
         <header
-        class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
-        <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
+            class="sticky top-0 z-30 py-2 px-4 h-14 xl:h-16 flex items-center justify-between border-b border-gray-200 bg-white">
+            <h1 class="lg:hidden text-2xl font-semibold">StudiNotes</h1>
 
-        <!-- search button , hamburger button  -->
-        <div class="flex items-center ml-auto gap-4">
-            <!-- uplaod button -->
-            <a href="upload.html"
-                class="px-2.5 py-1.5 sm:py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
-                <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
-                    class="hidden sm:block">&nbsp;materials</span></a>
-            <!-- search button -->
-            <div id="search" onclick="" class="cursor-pointer duration-100">
-                <i class="fa-regular fa-search text-xl"></i>
-            </div>
+            <!-- search button , hamburger button  -->
+            <div class="flex items-center ml-auto gap-4">
+                <!-- uplaod button -->
+                <a href="upload.html"
+                    class="px-2.5 py-1.5 sm:py-2 md:px-4 flex items-center text-sm font-medium rounded-lg bg-gray-50 border border-gray-400 active:bg-gray-300 duration-200 uppercase">
+                    <i class="fa-duotone fa-rectangle-history-circle-plus text-base mr-2 md:mr-4"></i>Upload<span
+                        class="hidden sm:block">&nbsp;materials</span></a>
+                <!-- search button -->
+                <div id="search" onclick="" class="cursor-pointer duration-100">
+                    <i class="fa-regular fa-search text-xl"></i>
+                </div>
 
-            <!-- hamburger button for mobile -->
-            <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
-                <i class="fa-regular fa-bars text-2xl"></i>
+                <!-- hamburger button for mobile -->
+                <div id="hamburger" onclick="toggleSideNav()" class="lg:hidden cursor-pointer duration-100">
+                    <i class="fa-regular fa-bars text-2xl"></i>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
         <div>
             <section>
                 <!-- upload study materials title -->
@@ -215,7 +215,7 @@
                             <!-- responding to if comming from respond button -->
                             <div
                                 class="relative col-span-full text-sm p-4 space-y-2  rounded-lg border border-gray-300 bg-gray-50">
-                             
+
                                 <!-- responding to  -->
                                 <div class="flex gap-2">
                                     <span class="whitespace-nowrap">Responding to :</span>
@@ -233,7 +233,7 @@
                                 </div>
                             </div>
 
-                            <!-- title -->
+                            <!-- title (required)-->
                             <div class="col-span-full">
                                 <label for="title" class="block mb-2 text-sm font-semibold">Title</label>
                                 <input type="text" placeholder="functions in C programming language." required
@@ -241,7 +241,7 @@
                                     class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
                             </div>
 
-                            <!-- description -->
+                            <!-- description (required)-->
                             <div class="col-span-full">
                                 <label for="description" class="block mb-2 text-sm font-semibold">Description</label>
                                 <textarea required id="description" name="description" rows="3"
@@ -253,11 +253,12 @@
                                 </p>
                             </div>
 
-                            <!-- It is a ? -->
+                            <!-- It is a ? (required)-->
                             <div class="relative sm:col-span-2">
                                 <label for="itisa" class="block mb-2 text-sm font-semibold">It is a ?</label>
                                 <select name="itisa" id="itisa" required
                                     class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                    <option value="" disabled selected>Select an option...</option>
                                     <option value="note" name="itisa">Note</option>
                                     <option value="question" name="itisa">Question</option>
                                     <option value="lab report" name="itisa">Lab Report</option>
@@ -267,11 +268,12 @@
                                 </div>
                             </div>
 
-                            <!-- Format ? -->
+                            <!-- Format ? (required)-->
                             <div class="relative sm:col-span-2">
                                 <label for="format" class="block mb-2 text-sm font-semibold">Format ?</label>
                                 <select name="format" id="format" required
                                     class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                    <option value="" disabled selected>Select an option...</option>
                                     <option value="handwritten" name="format">Handwritten</option>
                                     <option value="typed" name="format">Typed</option>
                                     <option value="photo" name="format">Photo</option>
@@ -281,37 +283,31 @@
                                 </div>
                             </div>
 
-                            <!-- subject -->
-                            <div class="sm:col-span-3">
-                                <label for="subject" class="block mb-2 text-sm font-semibold">Subject</label>
-                                <input type="text" placeholder="C Programming" required name="subject" id="subject"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                            <!-- Education Level (required)-->
+                            <div class="relative sm:col-span-2">
+                                <label for="education-level" class="block mb-2 text-sm font-semibold">Education
+                                    Level</label>
+                                <select name="education-level" id="education-level"
+                                    class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                    <option value="" disabled selected>Select an option...</option>
+                                    <option value="School" name="education-level">School</option>
+                                    <option value="+2" name="education-level">+2</option>
+                                    <option value="Bachelor" name="education-level">Bachelor</option>
+                                    <option value="Master" name="education-level">Master</option>
+                                    <option value="PhD" name="education-level">PhD</option>
+                                </select>
+                                <div class="pointer-events-none absolute right-5 bottom-3 text-gray-600">
+                                    <i class="fa-solid fa-sort"></i>
+                                </div>
                             </div>
 
-                            <!-- author / source / credits -->
-                            <div class="sm:col-span-3">
-                                <label for="subject" class="block mb-2 text-sm font-semibold">Author / Source / Credits
-                                    [ Be
-                                    Truthful ]</label>
-                                <input type="text" placeholder="Hakuna from YT learnWorld" required name="subject"
-                                    id="subject"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
-                            </div>
-
-                            <!-- class/faculty -->
-                            <div class="sm:col-span-4">
-                                <label for="class" class="block mb-2 text-sm font-semibold">Class/ Faculty</label>
-                                <input type="text" placeholder="Bachelor in Computer Applications" required name="class"
-                                    id="class"
-                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
-                            </div>
-
-                            <!-- semester (if applicable) -->
+                            <!-- semester (required) -->
                             <div class="relative sm:col-span-2">
                                 <label for="semester" class="block mb-2 text-sm font-semibold">Semester (if
                                     applicable)</label>
-                                <select name="semester" id="semester"
+                                <select name="semester" id="semester" required
                                     class="block w-full px-5 py-3 mt-2 appearance-none text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg">
+                                    <option value="" disabled selected>Select an option...</option>
                                     <option value="first" name="semester">First</option>
                                     <option value="second" name="semester">Second</option>
                                     <option value="third" name="semester">Third</option>
@@ -326,7 +322,45 @@
                                 </div>
                             </div>
 
-                            <!-- upload -->
+                            <!-- subject (required)-->
+                            <div class="sm:col-span-4">
+                                <label for="subject" class="block mb-2 text-sm font-semibold">Subject</label>
+                                <input type="text" placeholder="C Programming" required name="subject" id="subject"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                            </div>
+
+                            <!-- class/faculty (required)-->
+                            <div class="sm:col-span-3">
+                                <label for="class" class="block mb-2 text-sm font-semibold">Class/ Faculty</label>
+                                <input type="text" placeholder="Bachelor in Computer Applications" required name="class"
+                                    id="class"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                            </div>
+
+                            <!-- author / source / credits (required)-->
+                            <div class="sm:col-span-3">
+                                <label for="subject" class="block mb-2 text-sm font-semibold">Author / Source / Credits
+                                    [ Be
+                                    Truthful ]</label>
+                                <input type="text" placeholder="Hakuna from YT learnWorld" required name="subject"
+                                    id="subject"
+                                    class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-300 rounded-lg" />
+                            </div>
+
+                            <!-- upload thumbnail (required)-->
+                            <div class="col-span-full">
+                                <label for="file-thumbnail"
+                                    class="flex flex-col gap-2 text-center cursor-pointer rounded-lg border-2 border-dashed border-gray-400 px-6 py-10 hover:bg-gray-100 transition-all duration-400">
+                                    <i class="fa-duotone fa-image-landscape text-5xl"></i>
+                                    <span>Upload a Image or drag and drop 21:9 ratio</span>
+                                    <input id="file-thumbnail" name="file-thumbnail" type="file" accept=".jpg,.jpeg,.png" required
+                                        class="hidden" />
+                                    <p class="text-xs text-gray-600">JPG, JPEG, PNG up to 10MB</p>
+                                </label>
+                                
+                            </div>
+
+                            <!---upload pdf file (required) -->
                             <div class="col-span-full">
                                 <label for="file-upload"
                                     class="flex flex-col gap-2 text-center cursor-pointer rounded-lg border-2 border-dashed border-gray-400 px-6 py-10 hover:bg-gray-100 transition-all duration-400">

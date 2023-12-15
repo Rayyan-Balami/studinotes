@@ -180,330 +180,546 @@
         </header>
         <div>
 
-            
+
             <section>
                 <!-- lab reports cards  -->
                 <div
-                    class="p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-6">
+                    class="p-4 sm:p-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 gap-6">
                     <!-- card 1 -->
-                    <div class="group">
-
+                    <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 2-->
-                    <div class="group">
-
+                    <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 3-->
-                    <div class="group">
-
+                    <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 4-->
-                    <div class="group">
-
+                <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 5-->
-                    <div class="group">
-
+                <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 6-->
-                    <div class="group">
-
+                   <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
-                    </div>
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
+                    </div> 
                     <!--Card 7-->
-                    <div class="group">
-
+                <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                     <!--Card 8-->
-                    <div class="group">
-
+                <div class="group flex flex-col">
                         <!-- image -->
                         <div
-                            class="aspect-[4/3] overflow-hidden rounded-lg group-hover:brightness-110 transition-all duration-300">
-                            <a href="productPage.html">
-                                <img src="https://i.pinimg.com/564x/ee/02/da/ee02da709280faaa978b5f353c2e2af5.jpg"
-                                    alt="" class="object-cover w-full h-full">
-                            </a>
+                            class="aspect-[21/9] overflow-hidden rounded-lg transition-all duration-300">
+                            <img src="https://plus.unsplash.com/premium_photo-1682095643806-79da986ccf8d?q=80&amp;w=2942&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="" class="object-cover w-full h-full xl:group-hover:scale-110 xl:group-hover:brightness-105 xl:group-hover:-rotate-2 transition-all duration-300">
                         </div>
 
-                        <!-- @, username, verified icon, time posted ago, likes icon + count, views icon + count  -->
-                        <div class="px-0.5 mt-1.5 whitespace-nowrap flex items-center w-full gap-1 ">
-                            <!-- at @ icon -->
-                            <i class="fa-solid fa-at"></i>
-                            <!-- username -->
-                            <a href="profile.html"
-                                class="truncate font-medium text-sm">Rayyan_balamiRayyan_balami1234566789</a>
-                            <!-- verified icon if pro user -->
-                            <i class="fa-duotone fa-badge-check"></i>
-                            <!-- time -->
-                            <span class="text-xs">・2m</span>
-                            <!-- likes , views wrapper -->
-                            <div class="ml-auto text-xs font-medium space-x-1">
-                                <!-- likes + count   -->
-                                <span><i class="fa-duotone fa-heart mx-1"></i> 205</span>
-                                <!-- views + count -->
-                                <span><i class="fa-duotone fa-eye mr-1"></i> 205</span>
-                            </div>
-                        </div>
-
-                        <!-- Title -->
-                        <h2 class="pr-0.5 mt-1.5 font-semibold">
-                            <a href="productPage.html" class="line-clamp-2 leading-tight ml-5">
-                                A beautfiful girl with a beautiful smile thats not yours.
-                            </a>
+                        <!-- subject  -->
+                        <p class="px-3 mt-3 subject line-clamp-1 text-xs font-medium text-blue-600 uppercase">Scripting Language</p>
+                        <!-- title  -->
+                        <h2 class="title px-3 my-1.5 text-lg  line-clamp-2 font-semibold leading-tight">
+                            Introduction to variable, array, function || 100 practise sets with answers || #enjoyboyaaa 
                         </h2>
 
+                        <div
+                            class="px-3 mt-1.5 font-medium flex items-center gap-x-1 leading-tight text-sm w-fit max-w-[80%]">
+                            <!-- at icon @  -->
+                            <svg xmlns="http://www.w3.org/2000/svg" height="14" width="14" fill="#000"
+                                style="flex-shrink: 0;" viewBox="0 0 512 512">
+                                <path
+                                    d="M256 64C150 64 64 150 64 256s86 192 192 192c17.7 0 32 14.3 32 32s-14.3 32-32 32C114.6 512 0 397.4 0 256S114.6 0 256 0S512 114.6 512 256v32c0 53-43 96-96 96c-29.3 0-55.6-13.2-73.2-33.9C320 371.1 289.5 384 256 384c-70.7 0-128-57.3-128-128s57.3-128 128-128c27.9 0 53.7 8.9 74.7 24.1c5.7-5 13.1-8.1 21.3-8.1c17.7 0 32 14.3 32 32v80 32c0 17.7 14.3 32 32 32s32-14.3 32-32V256c0-106-86-192-192-192zm64 192a64 64 0 1 0 -128 0 64 64 0 1 0 128 0z">
+                                </path>
+                            </svg>
+                            <!-- username  -->
+                            <h3 class="truncate tracking-tight">
+                                An Apple
+                            </h3>
+                        </div>
+                        <p class="w-fit text-gray-800 ml-4 px-3.5 text-sm">1 hour Ago</p>
+
+                        <div class="w-fit ml-auto mt-auto mx-3 flex items-center text-sm font-medium gap-6 py-2 px-3 bg-gray-100 rounded-lg ">
+                            <!-- views  -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                                    </path>
+                                </svg>
+                                <span>1.5k</span>
+                            </div>
+                            <!-- comments -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z">
+                                    </path>
+                                </svg>
+                                <span>25</span>
+                            </div>
+                            <!-- likes -->
+                            <div class=" flex items-center gap-2">
+                                <svg class="w-4 h-4 " fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M14 10h4.764a2 2 0 011.789 2.894l-3.5 7A2 2 0 0115.263 21h-4.017c-.163 0-.326-.02-.485-.06L7 20m7-10V5a2 2 0 00-2-2h-.095c-.5 0-.905.405-.905.905 0 .714-.211 1.412-.608 2.006L7 11v9m7-10h-2M7 20H5a2 2 0 01-2-2v-6a2 2 0 012-2h2.5">
+                                    </path>
+                                </svg>
+                                <span>7</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
