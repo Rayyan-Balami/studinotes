@@ -15,11 +15,11 @@ function toggleSideNav() {
 
   function toggleSettingsDropdown() {
     const settingsDropdown = document.querySelector("#settingsDropdown");
-    const settingsIcon = document.querySelector("#settingsIcon");
-    const moreIcon = document.querySelector("#moreIcon");
+    const settingIcon = document.querySelector("#setting-icon");
+    const caretUpIcon = document.querySelector("#caret-up-icon");
     settingsDropdown.classList.toggle('hidden');
-    settingsIcon.classList.toggle('rotate-90');
-    moreIcon.classList.toggle('rotate-180');
+    settingIcon.classList.toggle('rotate-90');
+    caretUpIcon.classList.toggle('rotate-180');
   }
   
 
