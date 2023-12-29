@@ -21,6 +21,12 @@ function toggleSideNav() {
     settingIcon.classList.toggle('rotate-90');
     caretUpIcon.classList.toggle('rotate-180');
   }
+
+  function toggleSideInfo() {
+    const sideInfo = document.querySelector("#sideInfo");
+    sideInfo.classList.toggle('-right-full');
+    sideInfo.classList.toggle('right-0');
+  }
   
 
  
