@@ -27,6 +27,7 @@ function toggleSideNav() {
     sideInfo.classList.toggle('-right-full');
     sideInfo.classList.toggle('right-0');
   }
+
   
 
  
